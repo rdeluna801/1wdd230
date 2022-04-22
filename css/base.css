@@ -13,7 +13,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
-header{
+header {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: .5rem;
@@ -33,6 +33,9 @@ header h1 {
     padding: 1.5rem;
     justify-items: center;
     align-items: center;
+    font-family: 'Water Brush', cursive;
+    
+
 }
 
 body main {
@@ -41,8 +44,22 @@ body main {
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
  
 h2{
     align-items: center;
+    font-family: 'Playfair Display SC', serif;
+}
+
+footer {
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: .5rem;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+    justify-items: end;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
