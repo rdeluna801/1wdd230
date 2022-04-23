@@ -29,6 +29,8 @@ const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 // using getElementById
 document.getElementById("currentdate").textContent = fulldate;
+const fYear = {year} ;
+document.getElementById("date3").textContent;
 // ****************************
 // using querySelector
 const date2 = document.querySelector('#currentdate2');
