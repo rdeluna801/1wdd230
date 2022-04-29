@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+header,
+main,
+footer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 1rem auto;
+  border: 1px solid #bbb;
+  padding: 0.5rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header h1 {
+  padding: 1rem;
+  justify-items: center;
+  align-items: center;
+  font-family: "Water Brush", cursive;
+  font-size: 1.5rem;
+}
+
+body main {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+h2 {
+  align-items: center;
+  font-family: "Playfair Display SC", serif;
+}
+
+footer {
+  margin: 1rem auto;
+  border: 1px solid #bbb;
+  padding: 0.5rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  justify-items: end;
+  font-family: "Ubuntu Condensed", sans-serif;
+}

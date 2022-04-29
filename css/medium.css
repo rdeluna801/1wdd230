@@ -1,0 +1,28 @@
+@media only screen and (min-width: 32.5em) {
+  
+   
+ 
+    header h1 {
+        padding: 1.5rem;
+        font-size: 3rem;
+    
+    }
+
+    
+    h2{
+        align-items: center;
+        font-family: 'Playfair Display SC', serif;
+    }
+    footer {
+        margin: 1rem auto;
+        border: 1px solid #bbb;
+        padding: .5rem;
+        background-color: #eee;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        align-items: center;
+        justify-items: end;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+   
+}
