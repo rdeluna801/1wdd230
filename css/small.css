@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-
-header,
-footer {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 header {
   margin: 1rem auto;
   border: 1px solid #bbb;
@@ -20,6 +13,7 @@ header {
   grid-template-columns: 200px 1fr;
   align-items: center;
   justify-items: center;
+  max-width: 100%;
 }
 
 header img {
@@ -60,4 +54,5 @@ footer {
   grid-template-columns: auto;
   align-items: center;
   font-family: "Ubuntu Condensed", sans-serif;
+  max-width: 100%;
 }

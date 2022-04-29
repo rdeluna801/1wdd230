@@ -1,13 +1,18 @@
 @media only screen and (min-width: 64em) {
-
-
-
-
-     footer {
-            max-width: 100%;
-            font-size: 1.75rem;
-            justify-content: space-evenly;
-            padding: 1.5rem;
-          }
-
+  footer {
+    max-width: 100%;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+  }
+  header img {
+    border-radius: 1px;
+    padding: 10px;
+  }
+  footer p {
+    justify-content: center;
+  }
+  .datetime {
+    font-size: 1.75rem;
+  }
 }
