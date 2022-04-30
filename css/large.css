@@ -4,7 +4,7 @@
     box-sizing:content-box;
   }
   header {
-    max-width: 50%;
+    max-width: 70%;
   }
   footer {
     max-width: 100%;
@@ -15,7 +15,6 @@
   header img {
     border-radius: 1px;
     padding: 1.5em;
-    margin-left: 3em;
   }
   footer p {
     justify-content: center;
