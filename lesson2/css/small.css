@@ -27,7 +27,7 @@
     justify-items: center;
     align-items: center;
     font-family: "Water Brush", cursive;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   footer {
     margin: 1rem auto;
@@ -38,5 +38,16 @@
     grid-template-columns: auto;
     align-items: center;
     font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 1.5em;
     max-width: 100%;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows:auto;
+    font-size: 1.5em;
+  }
+  h2 {
+    align-items: center;
+    font-family: "Playfair Display SC", serif;
   }

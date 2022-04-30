@@ -1,0 +1,17 @@
+@media only screen and (min-width: 64em) {
+    footer {
+      font-size: 1em;
+      justify-content: space-evenly;
+      padding: 1.5em;
+    }
+    header img {
+      border-radius: 1px;
+      padding: 10px;
+    }
+    footer p {
+      justify-content: center;
+    }
+    .datetime {
+      font-size: 1.75em;
+    }
+  }
