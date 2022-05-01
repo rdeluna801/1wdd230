@@ -1,10 +1,33 @@
 @media only screen and (min-width: 32.5em) {
-    header h1 {
+    * {
+      max-width: 1000px;
+    }
+  header h1 {
         padding: 1.5rem;
         font-size: 3rem;
       }
     
-     
+      body main {
+      margin: 4em;
+        display: grid;
+        grid-template-columns: 350px 350px;
+        justify-items: center;
+        justify-content: center;
+        padding: 2em;
+    
+      }
+      .rep img {
+width: 300px;
+height: auto;
+      }
+      .white img {
+        width: 300px;
+        height: auto;
+      }
+      .bal img {
+        width: 300px;
+        height: auto;
+      }
      
      
 

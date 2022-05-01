@@ -15,6 +15,9 @@
     font-size: 1.5rem;
   }
   body main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     font-size: 1.5rem;
-  }
+    max-width: 70%;
 }

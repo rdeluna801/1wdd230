@@ -1,8 +1,11 @@
 @media only screen and (min-width: 64em) {
-    footer {
+  * {
+    max-width: 100%;}  
+  footer {
       font-size: 1em;
       justify-content: space-evenly;
       padding: 1.5em;
+      max-width: 100%;
     }
     header img {
       border-radius: 1px;
@@ -14,4 +17,26 @@
     .datetime {
       font-size: 1.75em;
     }
-  }
+    body main {
+      margin: 4em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+        padding: 3em;
+  
+      }
+      .rep img {
+        padding: 2em;
+      }
+      .white img {
+        padding: 2em;
+      }
+      .bal img {
+        padding: 2em;
+
+      }
+      .baltext {
+        padding: 2em;
+      }
+    }
