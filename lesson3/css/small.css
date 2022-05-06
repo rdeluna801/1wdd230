@@ -1,4 +1,4 @@
-@charset "UTF-8"; /* not necessary */
+@charset "UTF-8"; 
 * {
 	margin: 0;
 	padding: 0;
@@ -10,16 +10,15 @@ body {
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
 
-/* phone or baseline views **************************/
 header,
 footer {
-	background-color: #bed;
+	background-color: #094d92;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid #094d92;
 }
 
 header,
@@ -37,7 +36,7 @@ h2 {
 }
 
 nav {
-	background-color: #36454f;
+	background-color: #011936;
 	margin: 0 auto;
 	max-width: 780px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
@@ -53,13 +52,13 @@ nav ul li a {
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 0.95rem;
-	background: linear-gradient(90deg, transparent, yellow, transparent) top /
+	background: linear-gradient(90deg, transparent, #f8f4a6, transparent) top /
 		var(--d, 0) 10px no-repeat;
 	transition: 0.5s;
 }
 
 .active {
-	color: yellow;
+	color: #f8f4a6;
 }
 main {
 	display: grid;
@@ -84,5 +83,12 @@ main picture {
 footer p {
 	padding: .5rem;
 }
+/*color palette
+--fire-engine-red: #c1292eff;
+--light-sky-blue: #7fc8f8ff;
+--green-yellow-crayola: #f8f4a6ff;
+--yale-blue: #094d92ff;
+--prussian-blue: #053364ff;
+--oxford-blue: #011936ff;*/
 
 
