@@ -7,7 +7,7 @@
 
 body {
 	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+	font-family: 'Playfair Display', serif;
 }
 
 header,
@@ -34,6 +34,7 @@ h1 {
 }
 h2 {
 	color: #536878;
+	font-family: 'Cinzel', serif;
 }
 
 nav {
@@ -53,6 +54,7 @@ nav ul li a {
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 0.95rem;
+	font-family: 'Cinzel', serif;
 	background: linear-gradient(90deg, transparent, #c1292eff, transparent) top /
 		var(--d, 0) 10px no-repeat;
 	transition: 0.5s;
@@ -134,3 +136,15 @@ footer p {
 .oxford {
 	color: #011936ff;
 }
+#fonthead {
+	font-family: 'Cinzel', serif;
+}
+#fontbody {
+	font-family: 'Playfair Display', serif;
+}
+#fontheads {
+	font-family: 'Lobster', cursive;
+}
+/*font-family: 'Cinzel', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Playfair Display', serif;*/
