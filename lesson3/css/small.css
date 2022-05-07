@@ -58,9 +58,9 @@ nav ul li a {
 	transition: 0.5s;
 }
 
-.active {
+/*.active {
 	color: #f8f4a6;
-}
+}*/
 main {
 	display: grid;
 	grid-template-columns: 1fr;
