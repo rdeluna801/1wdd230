@@ -70,7 +70,28 @@ main article {
 	margin: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 1rem;
-	background-color: #eee;
+	
+}
+.dflb {
+	background-color: #f8f4a6;
+	
+}
+.darkf {
+	color:#094d92 ;
+
+}
+#darkf {
+	color:#094d92 ;
+}
+.lfdb {
+	background-color: #094d92;
+	
+}
+.lightf {
+	color: #f8f4a6;
+}
+#lightf {
+	color: #f8f4a6;
 }
 
 main article ul {
@@ -93,4 +114,23 @@ footer p {
 --prussian-blue: #053364ff;
 --oxford-blue: #011936ff;*/
 
+.yale {
+	color: #094d92ff;
+}
 
+.prussian {
+	color: #053364ff;
+}
+.fire {
+	color: #c1292eff;
+}
+.crayola {
+	color: #f8f4a6ff;
+	
+}
+.sky {
+	color: #7fc8f8ff;
+}
+.oxford {
+	color: #011936ff;
+}
