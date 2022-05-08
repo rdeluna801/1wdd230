@@ -6,9 +6,16 @@
 		font-size: 1.1rem;
 	}
 	main {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr .5fr 1fr;
+		max-width:fit-content;
+		justify-items: center;
+		align-items: center;
 	}
 	article:nth-child(3) {
 		grid-column: span 1;
+	}
+	main picture img {
+		max-height: 238px; 
+		max-width: 272px;
 	}
 }
