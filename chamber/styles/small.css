@@ -9,16 +9,23 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-header,
-footer {
+header{
   background-color: #094d92;
   display: flex;
-  flex-flow: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
   border: 1px solid #094d92;
 }
+footer {
+    background-color: #094d92;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #094d92;
+  }
 header,
 main,
 footer {
@@ -27,7 +34,7 @@ footer {
 }
 h1 {
   font-family: "Lobster", cursive;
-  font-size: 1.1rem;
+  font-size: 2rem;
   color: #fff;
 }
 h2 {
@@ -85,7 +92,7 @@ section a {
     text-decoration: none;
 }
 section img{
-    max: height 100px;;
+    max-height: 50px;
 }
 
 nav ul li.active a {
@@ -129,10 +136,10 @@ main {
   display: flex;
   flex: 1 auto;
   flex-flow: column;
-  font-size: 1 rem;
+  font-size: 1.5rem;
   justify-content: space-around;
   align-items: center;
-  background-color: #eee;
+  
   
 }
 footer p {
@@ -150,6 +157,5 @@ footer {
 }
 main section {
     display: block;
-    background-color: lightgrey;
     border: 1px soid #011936;
 }
