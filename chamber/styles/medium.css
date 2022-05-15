@@ -16,7 +16,8 @@
     border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  
   }
 }
