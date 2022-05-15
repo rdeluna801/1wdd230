@@ -3,5 +3,8 @@
     nav ul li a {
         padding: .5rem 1rem;
     }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     
     }
