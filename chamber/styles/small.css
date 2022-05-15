@@ -73,6 +73,17 @@ nav ul li a {
     var(--d, 0) 10px no-repeat;
   transition: 0.5s;
 }
+ nav section{
+    display:flex;
+    flex: 1 auto;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+section a {
+    margin: 5px;
+    text-decoration: none;
+}
 
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
