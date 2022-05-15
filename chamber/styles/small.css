@@ -112,11 +112,30 @@ aside {
 	background-color: #eee;
 }
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  font-size: 0.8rem;
+  display: flex;
+  flex: 1 auto;
+  flex-flow: column;
+  font-size: 1 rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  
 }
 footer p {
   padding: 0.5rem;
   color: #fff;
+  font-family: "Lobster", cursive;
+}
+footer {
+    font-family: 'Playfair Display', serif;
+    color:#fff;
+}
+.rname .projname {
+    font-size: 1rem;
+    font-family:'Playfair Display', serif;
+}
+main section {
+    display: block;
+    background-color: lightgrey;
+    border: 1px soid #011936;
 }
