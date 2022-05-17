@@ -20,4 +20,47 @@
   grid-template-columns: 1fr 1fr;
   
   }
+  /*.hero {
+    background-color: #bbb;
+    width: 50%;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+  }
+  .news {
+    background-color: #bbb;
+    width: 50%;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+  }
+  .events{
+    background-color: #bbb;
+    width: 50%;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+  
+  }
+  
+  .weather {
+    background-color: #bbb;
+    width: 50%;
+      height: 300px;
+      border: 1px solid #000;
+      padding: 1.5rem;
+      box-shadow: 0 0 30px #333;
+  }
+  
+  .join {
+    background-color: #bbb;
+    width: 50%;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+  }*/
 }
