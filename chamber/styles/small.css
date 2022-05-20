@@ -8,22 +8,11 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-header {
-  background-color: #094d92;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr .25fr .25fr .25fr .25fr;
-  padding: 10px;
-  border: 1px solid #094d92;
-}
 
-
-header 
+header, 
 footer {
   background-color: #094d92;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  
   padding: 10px;
   border: 1px solid #094d92;
 }
@@ -32,6 +21,32 @@ main,
 footer {
   max-width: 100%;
   margin: 2em auto;
+}
+header {
+  display: flex;
+flex-direction: row;
+}
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  padding: 0.5rem;
+  color: #fff;
+  font-family: "Lobster", cursive;
+}
+footer div{
+  font-family: "Playfair Display", serif;
+  color: #fff;
+}
+main {
+  display: grid;
+  grid-template-columns: 1 fr;
+  font-size: 1.5rem;
+  justify-items: center;
+  align-items: center;
 }
 h1 {
   font-family: "Lobster", cursive;
@@ -128,22 +143,8 @@ aside {
   padding: 0.75rem;
   color: #fff;
 }
-main {
-  display: grid;
-  grid-template-columns: 1 fr;
-  font-size: 1.5rem;
-  justify-items: center;
-  align-items: center;
-}
-footer p {
-  padding: 0.5rem;
-  color: #fff;
-  font-family: "Lobster", cursive;
-}
-footer {
-  font-family: "Playfair Display", serif;
-  color: #fff;
-}
+
+
 .rname .projname {
   font-size: 1rem;
   font-family: "Playfair Display", serif;

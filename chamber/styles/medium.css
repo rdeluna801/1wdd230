@@ -5,15 +5,18 @@
 
   nav ul#primaryNav {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-left: 2vw;
+   
     border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
 
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li img {
+    max-width: 30px;
+    max-height: 30px;
+    padding: 5px;
   }
   main {
   display: grid;
