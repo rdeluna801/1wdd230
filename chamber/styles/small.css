@@ -16,16 +16,6 @@ header {
   border: 1px solid #094d92;
 }
 
-header {
-
-}
-
-
-header section {
-  display:grid;
-grid-template-columns: 50px 2fr;
-align-items: center;
-}
 
 header 
 footer {
@@ -93,13 +83,13 @@ nav ul li a {
 }
 
 
-section a {
+/*section a {
   margin: 5px;
   text-decoration: none;
 }
 section img {
   max-height: 50px;
-}
+}*/
 
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
