@@ -162,24 +162,23 @@ aside {
 }
 
 main section {
-  display: block;
+  display: flex;
+
   border: 1px soid #011936;
 }
 
-.hero {
-  background-color: #bbb;
-  width: 95%;
-  height: 300px;
+.hero #town {
+  /*position: absolute;*/
   border: 1px solid #000;
   padding: 1.5rem;
   box-shadow: 0 0 30px #c1292e;
   margin: 1.5em;
 }
 
-.news {
-  background-color: #bbb;
-  width: 95%;
-  height: 300px;
+
+.news #news {
+  max-width: 95%;
+  height: 250px;
   border: 1px solid #000;
   padding: 1.5rem;
   box-shadow: 0 0 30px #c1292e;
