@@ -9,38 +9,45 @@ html {
   box-sizing: border-box;
 }
 
-header, 
+header,
 footer {
   background-color: #094d92;
-  
+
   padding: 10px;
   border: 1px solid #094d92;
 }
+
 header,
 main,
 footer {
   max-width: 100%;
   margin: 2em auto;
 }
+
 header {
   display: flex;
-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
 }
+
 footer {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
 }
+
 footer p {
   padding: 0.5rem;
   color: #fff;
   font-family: "Lobster", cursive;
 }
-footer div{
+
+footer div {
   font-family: "Playfair Display", serif;
   color: #fff;
 }
+
 main {
   display: grid;
   grid-template-columns: 1 fr;
@@ -48,11 +55,13 @@ main {
   justify-items: center;
   align-items: center;
 }
+
 h1 {
   font-family: "Lobster", cursive;
   font-size: 2rem;
   color: #fff;
 }
+
 h2 {
   color: #536878;
   font-family: "Cinzel", serif;
@@ -92,8 +101,7 @@ nav ul li a {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   font-family: "Cinzel", serif;
   font-size: 0.95rem;
-  background: linear-gradient(90deg, transparent, #c1292eff, transparent) top /
-    var(--d, 0) 10px no-repeat;
+  background: linear-gradient(90deg, transparent, #c1292eff, transparent) top / var(--d, 0) 10px no-repeat;
   transition: 0.5s;
 }
 
@@ -114,9 +122,11 @@ nav ul li.active a {
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 nav ul {
   display: none;
 }
+
 nav ul.open {
   display: block;
 }
@@ -136,6 +146,7 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(2) {
   display: block;
 }
+
 .date,
 aside {
   margin: 0.5rem;
@@ -149,10 +160,12 @@ aside {
   font-size: 1rem;
   font-family: "Playfair Display", serif;
 }
+
 main section {
   display: block;
   border: 1px soid #011936;
 }
+
 .hero {
   background-color: #bbb;
   width: 95%;
@@ -162,6 +175,7 @@ main section {
   box-shadow: 0 0 30px #c1292e;
   margin: 1.5em;
 }
+
 .news {
   background-color: #bbb;
   width: 95%;
@@ -171,6 +185,7 @@ main section {
   box-shadow: 0 0 30px #c1292e;
   margin: 1.5em;
 }
+
 .events {
   background-color: #bbb;
   width: 95%;
@@ -200,6 +215,7 @@ main section {
   box-shadow: 0 0 30px #c1292e;
   margin: 1.5em;
 }
+
 .spotlight {
   background-color: #bbb;
   width: 95%;
