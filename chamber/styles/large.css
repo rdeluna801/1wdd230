@@ -1,14 +1,11 @@
 @media only screen and (min-width: 64rem) {
-
     nav ul li a {
-        padding: .5rem 1rem;
-
+        padding: 0.5rem 1rem;
     }
 
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
+    main section {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-
-
 
 }
