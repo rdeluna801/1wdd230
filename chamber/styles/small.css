@@ -9,25 +9,30 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  max-width: 100%;
+}
+
 header,
 footer {
   background-color: #094d92;
-
-  padding: 10px;
   border: 1px solid #094d92;
 }
 
-header,
-main,
-footer {
-  max-width: 100%;
-  margin: 2em auto;
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.logo {
+  max-width: 200px;
+  grid-column-start: auto;
+}
+
+header div .sociallogo {
+  max-width: 50px;
 }
 
 footer {
@@ -38,32 +43,37 @@ footer {
 }
 
 footer p {
-  padding: 0.5rem;
   color: #fff;
   font-family: "Lobster", cursive;
+  font-size: 2rem;
 }
 
 footer div {
   font-family: "Playfair Display", serif;
   color: #fff;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1 fr;
-  font-size: 1.5rem;
-  justify-items: center;
-  align-items: center;
+  font-size: 1.25rem;
 }
 
 h1 {
   font-family: "Lobster", cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
+}
+
+div.currentdate {
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
 }
 
 h2 {
   color: #536878;
+  font-family: "Cinzel", serif;
+}
+
+h3 {
+  color: black;
   font-family: "Cinzel", serif;
 }
 
@@ -81,8 +91,6 @@ nav {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 nav button {
@@ -95,24 +103,14 @@ nav button {
 
 nav ul li a {
   display: block;
-  padding: 0.8rem 2vw;
   text-decoration: none;
   color: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   font-family: "Cinzel", serif;
-  font-size: 0.95rem;
+  font-size: 2rem;
   background: linear-gradient(90deg, transparent, #c1292eff, transparent) top / var(--d, 0) 10px no-repeat;
   transition: 0.5s;
 }
-
-
-/*section a {
-  margin: 5px;
-  text-decoration: none;
-}
-section img {
-  max-height: 50px;
-}*/
 
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
@@ -131,30 +129,21 @@ nav ul.open {
   display: block;
 }
 
-#hamburgerBtn span:nth-child(1) {
+button#hamburgerBtn span:nth-child(1) {
   display: block;
 }
 
-#hamburgerBtn span:nth-child(2) {
+button#hamburgerBtn span:nth-child(2) {
   display: none;
 }
 
-#hamburgerBtn.open span:nth-child(1) {
+button#hamburgerBtn.open span:nth-child(1) {
   display: none;
 }
 
-#hamburgerBtn.open span:nth-child(2) {
+button#hamburgerBtn.open span:nth-child(2) {
   display: block;
 }
-
-.date,
-aside {
-  margin: 0.5rem;
-  border: 1px solid #bbb;
-  padding: 0.75rem;
-  color: #fff;
-}
-
 
 .rname .projname {
   font-size: 1rem;
@@ -162,65 +151,74 @@ aside {
 }
 
 main section {
-  display: flex;
-
-  border: 1px soid #011936;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 5px;
+  justify-items: center;
+  align-items: center;
 }
+
+h3.welcometitle {
+  font-family: "Lobster", cursive;
+  color: #094d92;
+  font-size: 2rem;
+
+}
+
+
+
 
 .hero #town {
-  /*position: absolute;*/
+
   border: 1px solid #000;
-  padding: 1.5rem;
-  box-shadow: 0 0 30px #c1292e;
-  margin: 1.5em;
+  box-shadow: 0 0 10px #c1292e;
+
+  grid-row: 1/2;
+}
+
+.news {
+
+  border: 1px solid black;
+  box-shadow: 0 0 10px #c1292e;
+
+  grid-row: 2/3;
 }
 
 
-.news #news {
-  max-width: 95%;
-  height: 250px;
-  border: 1px solid #000;
-  padding: 1.5rem;
-  box-shadow: 0 0 30px #c1292e;
-  margin: 1.5em;
+.secTitles {
+  position: relative;
+  text-align: center;
 }
 
 .events {
   background-color: #bbb;
-  width: 95%;
-  height: 300px;
+
   border: 1px solid #000;
-  padding: 1.5rem;
-  box-shadow: 0 0 30px #c1292e;
-  margin: 1.5em;
+  box-shadow: 0 0 10px #c1292e;
+
 }
 
 .weather {
   background-color: #bbb;
-  width: 95%;
-  height: 300px;
+
   border: 1px solid #000;
-  padding: 1.5rem;
-  box-shadow: 0 0 30px #c1292e;
-  margin: 1.5em;
+  box-shadow: 0 0 10px #c1292e;
+
 }
 
 .join {
   background-color: #bbb;
-  width: 95%;
-  height: 300px;
+
   border: 1px solid #000;
-  padding: 1.5rem;
-  box-shadow: 0 0 30px #c1292e;
-  margin: 1.5em;
+  box-shadow: 0 0 10px #c1292e;
+
 }
 
 .spotlight {
   background-color: #bbb;
-  width: 95%;
-  height: 300px;
+
   border: 1px solid #000;
-  padding: 1.5rem;
-  box-shadow: 0 0 30px #c1292e;
-  margin: 1.5em;
+  box-shadow: 0 0 10px #c1292e;
+
 }

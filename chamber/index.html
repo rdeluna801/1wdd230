@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>City of Holladay Chamber of Commerce</title>
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/large.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/medium.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lobster&family=Playfair+Display+SC:wght@400;900&family=Ubuntu+Condensed&family=Water+Brush&display=swap"
@@ -21,20 +21,21 @@
 
 <body>
   <header>
-    <div><img src="images/rsz_icon.jpeg" alt="Welcome to Utah highway sign" /></div>
+    <div class="logo">
+      <img src="images/rsz_icon.jpeg" alt="Welcome to Utah highway sign" />
+    </div>
     <div>
       <h1>City of Holladay Chamber of Commerce</h1>
     </div>
-    <div class="currentdate"></div>
-
+    <div class="sociallogo">
+      <a href="facebook.com"><img src="images/rsz_facebook.png" alt="facebook logo" /></a>
+      <a href="linkedin.com"><img src="images/rsz_linkdin.png" alt="linkedin logo" /></a>
+    </div>
   </header>
   <nav>
     <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-    <ul id="primaryNav">
+    <ul class="active" id="primaryNav">
       <li><a href="/Users/randideluna/wdd230/chamber/index.html">Home</a></li>
-      <li class="active">
-        <a href="#">placeholder</a>
-      </li>
       <li>
         <a href="#">placeholder</a>
       </li>
@@ -42,35 +43,41 @@
         <a href="#">placeholder</a>
       </li>
       <li>
-        <img src="images/facebook.png" alt="facebook logo">
-      </li>
-      <li>
-        <img src="images/linkdin.png" alt="linkedin logo">
-      </li>
-      <li>
-        <img src="images/youtube.png" alt="youtube logo">
-      </li>
-      <li>
-        <img src="images/twitter.png" alt="twitter logo">
+        <a href="#">placeholder</a>
       </li>
     </ul>
-
-
   </nav>
+  <div class="currentdate"></div>
   <main>
-    <section class="news"><img id="news" src="images/rsz_news.jpeg" alt="picture of newspapers"></section>
-    <section class="hero"><img id="town" src="images/rsz_town.jpeg" alt="picture of town"></section>
-    <section class="events">Events</section>
-    <section class="weather">Weather</section>
-    <section class="join">Join</section>
-    <section class="spotlight">Company Spotlight</section>
+    <section id="main">
+      <div class="news">
+        <h3>The Community Newsletter</h3>
+      </div>
+      <div class="hero">
+        <h3 class="welcometitle">Welcome to Holladay!</h3>
+        <img id="town" src="images/rsz_town.jpeg" alt="picture of town" />
+      </div>
+      <div class="events">
+        <h3>Upcoming Events</h3>
+      </div>
+      <div class="weather">
+        <h3>Weather</h3>
+      </div>
+      <div class="join">
+        <h3>Come Join Us!</h3>
+      </div>
+      <div class="spotlight">
+        <h3>Company Spotlight</h3>
+      </div>
+    </section>
   </main>
   <footer>
-    <p>
-      &copy; City of Holladay Chamber of Commerce &bull;
-    </p>
+    <p>City of Holladay Chamber of Commerce</p>
     <div class="infoSite">info@holladaycommerce.org</div>
-    <div>&copy;2022 City of Holladay Chamber of Commerce</div>
+    <div>
+      &copy;<span class="copyrightdate"></span>City of Holladay Chamber of
+      Commerce
+    </div>
     <div class="rname">Randi DeLuna</div>
     <div class="projname">WDD 230 Project</div>
     <div id="lastModified">Last Updated:</div>
