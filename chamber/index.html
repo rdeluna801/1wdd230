@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="clearfix">
     <figure class="logo">
       <img src="images/rsz_icon.jpeg"
         alt="Welcome to Utah highway sign used as logo for City of Holladay Chamber of Commerce"
@@ -29,10 +29,14 @@
     <div>
       <h1>City of Holladay Chamber of Commerce</h1>
     </div>
-    <div class="sociallogo">
-      <a href="facebook.com"><img src="images/rsz_facebook.png" alt="facebook logo" /></a>
-      <a href="linkedin.com"><img src="images/rsz_linkdin.png" alt="linkedin logo" /></a>
-    </div>
+    <figure class="fblogo">
+      <img src="images/rsz_facebook.png" alt="facebook logo"
+        srcset="images/fb1.png 1x, images/fb2.png 2x, images/fb3.png 3x">
+    </figure>
+    <figure class="linklogo">
+      <img src="images/rsz_linkdin.png" alt="linkdin logo"
+        srcset="images/link1.png 1x, images/link2.png 2x, images/link3.png 3x">
+    </figure>
   </header>
   <nav>
     <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -57,7 +61,12 @@
       </div>
       <div class="hero">
         <h3 class="welcometitle">Welcome to Holladay!</h3>
-        <img id="town" src="images/wdd230-org.jpeg" alt="picture of town" />
+        <picture class="town">
+          <source media="(max-width:200px)" srcset="images/town200.png">
+          <source media="(max-width:400px)" srcset="images/town400.png">
+          <source media="(max-width:800px)" srcset="images/town800.png">
+          <img src="images/town1100.jpg" alt="picture of town">
+        </picture>
       </div>
       <div class="events">
         <h3>Upcoming Events</h3>
