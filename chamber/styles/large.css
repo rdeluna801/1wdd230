@@ -3,8 +3,7 @@
         padding: 0.5rem 1rem;
     }
 
-    main section {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+    /* main section {
+        /*grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;*/
 }

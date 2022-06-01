@@ -11,43 +11,58 @@ html {
 
 body {
   max-width: 100%;
+  display: grid;
+  grid-template: "header-title logo fblogo linklogo"10em "nav nav nav nav nav"50vh "currentdate"1fr "news hero events"1fr "weather join spotlight"1fr "footer footer footer"10em / 1fr minmax(30em, 5fr) minmax(15em, 2fr) 1fr;
+  grid-gap: 1.5em;
 }
 
-header,
-footer {
+/*header*/
+header {
   background-color: #094d92;
   border: 1px solid #094d92;
-}
-
-header {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  /* display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
-  justify-items: center;
+  justify-items: center;*/
   padding: .5rem 2%;
 }
 
-header figure.logo {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  margin: 0 2% 0 0;
+.logo {
+  /*grid-column: 2/3;
+  grid-row: 1/2;*/
+  grid-area: "logo";
 
 }
 
-header figure.fblogo {
-  grid-column: 2/3;
-  grid-row: 2/3;
+.fblogo {
+  /*grid-column: 2/3;
+  grid-row: 2/3;*/
+  grid-area: "fblogo";
 }
 
 header figure.linklogo {
-  grid-column: 2/3;
-  grid-row: 3/4;
+  /*grid-column: 2/3;
+  grid-row: 3/4;*/
+  grid-area: "linklogo";
 }
 
+header h1 {
+  grid-area: "header-title";
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: #fff;
+  /*grid-row: 1/4;*/
+}
+
+/*footer area*/
 footer {
+  background-color: #094d92;
+  border: 1px solid #094d92;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -64,14 +79,8 @@ footer div {
   font-size: 1.25rem;
 }
 
-h1 {
-  font-family: "Lobster", cursive;
-  font-size: 4rem;
-  color: #fff;
-  grid-row: 1/4;
-}
-
 div.currentdate {
+  grid-area: "currentdate";
   font-family: "Playfair Display", serif;
   color: black;
   font-size: 2rem;
@@ -88,11 +97,12 @@ h3 {
   font-family: "Cinzel", serif;
 }
 
-h1,
-p {
-  margin: 0 2vw;
+.rname .projname {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
 }
 
+/*navigation area*/
 nav {
   background-color: #011936;
   margin: 0 auto;
@@ -156,34 +166,30 @@ button#hamburgerBtn.open span:nth-child(2) {
   display: block;
 }
 
-.rname .projname {
-  font-size: 1rem;
-  font-family: "Playfair Display", serif;
-}
-
-main section {
+/*main section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   row-gap: 5px;
   justify-items: center;
   align-items: center;
-}
+}*/
 
 h3.welcometitle {
   font-family: "Lobster", cursive;
   color: #094d92;
   font-size: 2rem;
-  grid-column: 2/3;
-  display: inline-grid;
+  /*grid-column: 2/3;
+  display: inline-grid;*/
   margin-left: 4%;
 }
 
 main div.hero {
+  grid-area: "hero";
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
-  grid-row: 1/2;
-  grid-column: 2/3;
+  /*grid-row: 1/2;
+  grid-column: 2/3;*/
 
 }
 
@@ -194,9 +200,10 @@ main div.hero picture.town {
 }
 
 .news {
+  grid-area: "news";
   border: 1px solid black;
   box-shadow: 0 0 10px #c1292e;
-  grid-row: 2/3;
+  /*grid-row: 2/3;*/
 }
 
 .secTitles {
@@ -205,24 +212,28 @@ main div.hero picture.town {
 }
 
 .events {
+  grid-area: "events";
   background-color: #bbb;
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
 }
 
 .weather {
+  grid-area: "weather";
   background-color: #bbb;
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
 }
 
 .join {
+  grid-area: "join";
   background-color: #bbb;
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
 }
 
 .spotlight {
+  grid-area: "spotlight";
   background-color: #bbb;
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
