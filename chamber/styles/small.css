@@ -21,25 +21,28 @@ footer {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   padding: .5rem 2%;
 }
 
 header figure.logo {
-  grid-column: 1/2;
-  grid-row: 1/3;
+  grid-column: 2/3;
+  grid-row: 1/2;
   margin: 0 2% 0 0;
-  float: left;
+
 }
 
 header figure.fblogo {
-  grid-column: 3/4;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 header figure.linklogo {
-  grid-column: 3/4;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 footer {
@@ -63,8 +66,9 @@ footer div {
 
 h1 {
   font-family: "Lobster", cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
+  grid-row: 1/4;
 }
 
 div.currentdate {
@@ -170,21 +174,26 @@ h3.welcometitle {
   font-family: "Lobster", cursive;
   color: #094d92;
   font-size: 2rem;
-
+  grid-column: 2/3;
+  display: inline-grid;
+  margin-left: 4%;
 }
 
 main div.hero {
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
   grid-row: 1/2;
+  grid-column: 2/3;
+
 }
 
 main div.hero picture.town {
   display: block;
+  width: 100%;
+
 }
 
 .news {
-
   border: 1px solid black;
   box-shadow: 0 0 10px #c1292e;
   grid-row: 2/3;
