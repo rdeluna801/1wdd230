@@ -11,6 +11,7 @@ html {
 
 body {
   max-width: 100%;
+  background-color: #f8f4a6;
   /* display: grid;
   grid-template: "header-title logo fblogo linklogo"10em "nav nav nav nav nav"50vh "currentdate"1fr "news hero events"1fr "weather join spotlight"1fr "footer footer footer"10em / 1fr minmax(30em, 5fr) minmax(15em, 2fr) 1fr;
   grid-gap: 1.5em;*/
@@ -165,7 +166,14 @@ main section {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 5px;
-  align-items: center;
+}
+
+main p {
+  font-family: 'Playfair Display',
+    serif;
+  font-size: 1.5rem;
+  padding: 1em;
+  margin-left: 2%;
 }
 
 h3.welcometitle {
@@ -177,7 +185,7 @@ h3.welcometitle {
 }
 
 main figure.town {
-  border: 1px solid #000;
+
   box-shadow: 0 0 10px #c1292e;
   grid-row: 2;
 
@@ -186,7 +194,23 @@ main figure.town {
 main figure.town img {
 
   width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 0 15px rgb(71, 55, 55);
 
+}
+
+main figure.companyOne img {
+  border: 1px solid #000;
+  box-shadow: 0 0 15px rgb(71, 55, 55);
+}
+
+/*main div.spotlight p {
+ 
+}*/
+
+main figure.contact img {
+  border: 1px solid #000;
+  box-shadow: 0 0 15px rgb(71, 55, 55);
 }
 
 .news {

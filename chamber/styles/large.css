@@ -8,6 +8,8 @@
     main section {
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: stretch;
     }
 
     h3.welcometitle {
@@ -31,6 +33,30 @@
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
+    }
+
+    .join {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .spotlight {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .spotlightHistory {
+        grid-column: 3/4;
+        border: 1px solid #000;
+        box-shadow: 0 0 10px #c1292e;
+    }
+
+    .spotlightCommunity {
+        grid-column:
+            3/4;
+        border: 1px solid #000;
+        box-shadow: 0 0 10px #c1292e;
+
     }
 
 
