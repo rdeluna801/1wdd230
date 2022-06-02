@@ -1,4 +1,8 @@
 @media only screen and (min-width: 35rem) {
+  header {
+    justify-items: start;
+  }
+
   nav button {
     display: none;
   }
@@ -23,44 +27,31 @@
     padding: 5px;
   }
 
-  main section {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
-    justify-items: stretch;
-  }
 
 
-  main div.hero {
-    grid-column: 2/3;
-    grid-row: 1;
 
-  }
 
-  main div.hero picture.town {
-    max-width: 100%;
-  }
 
-  h3.welcometitle {
+  /*.news {
     grid-column: 1/3;
-
-  }
-
-  .news {
-    grid-column: 1/3;
+    grid-row: 2;
 
   }
 
   .join {
     grid-column: 1/3;
+    grid-row: 3;
   }
 
   .events {
     grid-column: 1/2;
+    grid-row: 4;
   }
 
   .weather {
     grid-column: 2/3;
-  }
+    grid-row: 4;
+  }*/
 
   /* unvisited link */
   a:link {
