@@ -1,25 +1,63 @@
-@media only screen and (min-width: 64em) {
-  * {
-    margin: 0;
-    box-sizing:content-box;
-  }
-  header {
-    max-width: 70%;
-  }
-  footer {
-    max-width: 100%;
-    font-size: 1rem;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-  }
-  header img {
-    border-radius: 1px;
-    padding: 1.5em;
-  }
-  footer p {
-    justify-content: center;
-  }
-  .datetime {
-    font-size: 1.75rem;
-  }
+@media only screen and (min-width: 64rem) {
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+
+
+    main section {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: stretch;
+    }
+
+    h3.welcometitle {
+        grid-column: 1/4;
+    }
+
+    main figure.town {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    .news {
+        grid-column: 2/3;
+    }
+
+    .events {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .join {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .spotlight {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .spotlightHistory {
+        grid-column: 3/4;
+        border: 1px solid #000;
+        box-shadow: 0 0 10px #c1292e;
+    }
+
+    .spotlightCommunity {
+        grid-column:
+            3/4;
+        border: 1px solid #000;
+        box-shadow: 0 0 10px #c1292e;
+
+    }
+
+
 }

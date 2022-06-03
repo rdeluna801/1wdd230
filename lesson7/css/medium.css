@@ -1,23 +1,75 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35rem) {
   header {
-    max-width: 70%;
-  }
-  header h1 {
-    padding: 1.5rem;
-    font-size: 3rem;
+    justify-items: start;
   }
 
-  h2 {
-    align-items: center;
-    font-family: "Playfair Display SC", serif;
+  nav button {
+    display: none;
   }
-  footer {
-    font-size: 1.5rem;
+
+  nav ul#primaryNav {
+    display: flex;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
-  body main {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    font-size: 1.5rem;
-    max-width: 70%;
+
+  #primaryNav {
+    justify-content: center;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  nav ul li img {
+    max-width: 30px;
+    max-height: 30px;
+    padding: 5px;
+  }
+
+
+
+
+
+
+  /*.news {
+    grid-column: 1/3;
+    grid-row: 2;
+
+  }
+
+  .join {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+
+  .events {
+    grid-column: 1/2;
+    grid-row: 4;
+  }
+
+  .weather {
+    grid-column: 2/3;
+    grid-row: 4;
+  }*/
+
+  /* unvisited link */
+  a:link {
+    color: #f8f4a6;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #7fc8f8;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #c1292e;
+  }
+
+  /* selected link */
+  a:active {
+    color: #f8f4a6;
+  }
 }
