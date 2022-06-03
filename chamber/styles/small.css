@@ -22,7 +22,7 @@ header {
   background-color: #094d92;
   border: 1px solid #094d92;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -33,16 +33,25 @@ header figure.logo {
   margin: 0;
 }
 
+.headerflex {
+  display: flex;
+
+}
+
 .fblogo {
   grid-column: 1/2;
   grid-row: 2/3;
   margin: 0;
+  padding: .5rem;
+  margin-left: 10px;
 }
 
 header figure.linklogo {
   grid-column: 2/3;
   grid-row: 2/3;
   margin: 0;
+  padding: .5rem;
+
 }
 
 header h1 {

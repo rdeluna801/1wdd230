@@ -1,0 +1,25 @@
+@media only screen and (min-width: 64em) {
+  * {
+    margin: 0;
+    box-sizing:content-box;
+  }
+  header {
+    max-width: 70%;
+  }
+  footer {
+    max-width: 100%;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+  }
+  header img {
+    border-radius: 1px;
+    padding: 1.5em;
+  }
+  footer p {
+    justify-content: center;
+  }
+  .datetime {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,23 @@
+@media only screen and (min-width: 32.5em) {
+  header {
+    max-width: 70%;
+  }
+  header h1 {
+    padding: 1.5rem;
+    font-size: 3rem;
+  }
+
+  h2 {
+    align-items: center;
+    font-family: "Playfair Display SC", serif;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-size: 1.5rem;
+    max-width: 70%;
+}

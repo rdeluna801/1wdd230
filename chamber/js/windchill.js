@@ -9,8 +9,7 @@ function doInputOutput() {
 function windChill(tempF, speed) {
     let f = 35.74 + (0.6215 * tempF) - (35.75 * (Math.pow(speed, 0.16))) + (0.4275 * (tempF * (Math.pow(speed, 0.16))));
     return f;
-} //input type = "text"
-//id = "tempInput"  Insert Temperature 
+} //input type = "text" id = "tempInput"  Insert Temperature 
 
 // input type = "text"
 //id = "windInput"  Insert Wind Speed 
