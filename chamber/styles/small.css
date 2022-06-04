@@ -185,6 +185,13 @@ main p {
   margin-left: 2%;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 h3.welcometitle {
   font-family: "Lobster", cursive;
   color: #094d92;
@@ -235,17 +242,45 @@ main figure.contact img {
 }
 
 .events {
+  display: flex;
+  flex-direction: column;
 
   background-color: #bbb;
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
 }
 
-.weather {
+.eventArticle {
+  background-color: ;
+}
 
-  background-color: #bbb;
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #c26265;
   border: 1px solid #000;
   box-shadow: 0 0 10px #c1292e;
+  color: #fff;
+  font-size: xx-large;
+}
+
+.crisis {
+  border: 2px solid black;
+  box-shadow: 0 0 15px #555;
+}
+
+.temp,
+.speed,
+.chill {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fff;
+}
+
+.temp {
+  font-size: larger;
+  border-bottom: 3px solid rgb(71, 55, 55);
 }
 
 .join {

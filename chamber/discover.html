@@ -5,36 +5,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Assignment portal for Randi DeLuna for course WDD230" />
-    <title>Randi DeLuna</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
+    <title>Discover-City of Holladay Chamber of Commerce</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;900&family=Ubuntu+Condensed&family=Water+Brush&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lobster&family=Playfair+Display+SC:wght@400;900&family=Ubuntu+Condensed&family=Water+Brush&display=swap"
         rel="stylesheet" />
+    <link href="https://coolors.co/c1292e-7fc8f8-f8f4a6-094d92-053364-011936" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <picture><img src="images/IMG_20170820_124457648_Original.jpg" alt="picture of Randi" /></picture>
-        <h1>Randi DeLuna</h1>
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/logo6975.jpg" sizes="20vw"
+                alt="Welcome to Utah highway sign used as logo for City of Holladay Chamber of Commerce"
+                srcset="images/logo6975.jpg 75w, images/logo138150.jpg 150w, images/logo246300.jpg 300w">
+        </figure>
+
+        <h1 class="header-title">City of Holladay Chamber of Commerce</h1>
+        <div class="headerflex">
+            <figure class="fblogo">
+                <img src="images/fb1.png" alt="facebook logo" sizes="2vw"
+                    srcset="images/fb1.png 50w, images/fb2.png 75w, images/fb3.png 90w">
+            </figure>
+            <figure class="linklogo">
+                <img src="images/rsz_linkdin.png" alt="linkdin logo" sizes="2vw"
+                    srcset="images/link1.png 50w, images/link2.png 75w, images/link3.png 90w">
+            </figure>
+        </div>
     </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul class="active" id="primaryNav">
+            <li><a href="/Users/randideluna/wdd230/chamber/index.html">Home</a></li>
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+            <li>
+                <a href="#">placeholder</a>
+            </li>
+            <li>
+                <a href="#">placeholder</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="currentdate"></div>
+    <main>
+        <figure>
+            <img data-src="" src="images/placeholder.png" alt="">
+        </figure>
+        <figure>
+            <img data-src="" src="images/placeholder.png" alt="">
+        </figure>
+        <figure>
+            <img data-src="" src="images/placeholder.png" alt="">
+        </figure>
+        <figure>
+            <img data-src="" src="images/placeholder.png" alt="">
+        </figure>
+        <figure>
+            <img data-src="" src="images/placeholder.png" alt="">
+        </figure>
 
-
-
+    </main>
 
     <footer>
-        &copy; 2022 | Randi DeLuna | Utah
-        <p class="datetime">
-            Last Modified Date: <span id="modifiedDate"></span>
-        </p>
+        <p>City of Holladay Chamber of Commerce</p>
+        <div class="infoSite">info@holladaycommerce.org</div>
+        <div>
+            &copy;<span class="copyrightdate"></span>City of Holladay Chamber of
+            Commerce
+        </div>
+        <div class="rname">Randi DeLuna</div>
+        <div class="projname">WDD 230 Project</div>
+        <div id="lastModified">Last Updated:</div>
     </footer>
+    <script src="js/imagehandler.js"></script>
+    <script src="js/modifiedTime.js"></script>
+    <script src="js/currentTime.js"></script>
 
-    <script src="js/modifiedDate.js"></script>
 </body>
 
 </html>
