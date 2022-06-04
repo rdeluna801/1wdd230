@@ -302,3 +302,17 @@ main figure.contact img {
   display: table;
   clear: both;
 }
+
+/*.norm:hover {
+  box-shadow: 0 0 50px #333;
+}*/
+main.discoverGrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.church img {
+  border: 2px solid black;
+  box-shadow: 0 0 15px #555;
+}
