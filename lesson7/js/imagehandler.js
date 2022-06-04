@@ -1,17 +1,21 @@
-const images = document.querySelectorAll("src")
+//const images = document.querySelectorAll("img[data-src]")
+let images = document.querySelectorAll("img[src]")
+
+console.log(images)
 
 function preloadImage(img) {
     const src = img.getAttribute("src");
     if (!src) {
         return;
     }
-
-    img.src = src;
+    img.setAttribute("src", img.getAttribute("data-src"))
+    img.removeAttribute("data-src");
+    console.log(img.src)
 }
 
 const imgOptions = {
     threshold: 0,
-    rootMargin: "0px 0px -100px 0px"
+    rootMargin: "0px 0px 500px 0px"
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
@@ -25,5 +29,6 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     })
 }, imgOptions);
 images.forEach(image => {
+    console.log(image)
     imgObserver.observe(image);
 });
