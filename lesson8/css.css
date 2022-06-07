@@ -14,10 +14,17 @@ table {
     border: thin solid var(--border);
     box-shadow: 0 0 30px var(--shadow);
     border-collapse: collapse;
+    font-family: 'Ubuntu',
+        sans-serif;
 }
 
 tr:first-child th {
     background-color: var(--back);
+    font-weight: 800;
+    font-size: x-large;
+}
+
+tr:nth-child(2) th {
     color: var(--forelight);
 }
 
@@ -37,4 +44,13 @@ td {
 
 tbody tr:nth-child(even) {
     background-color: var(--zebra);
+}
+
+tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: var(--back2);
+    color: var(--zebra);
+}
+
+tfoot {
+    background-color: var(--back);
 }
