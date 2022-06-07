@@ -11,10 +11,8 @@ html {
 
 body {
   max-width: 100%;
-  background-color: #f8f4a6;
-  /* display: grid;
-  grid-template: "header-title logo fblogo linklogo"10em "nav nav nav nav nav"50vh "currentdate"1fr "news hero events"1fr "weather join spotlight"1fr "footer footer footer"10em / 1fr minmax(30em, 5fr) minmax(15em, 2fr) 1fr;
-  grid-gap: 1.5em;*/
+  background-color: #bfab25;
+
 }
 
 /*header*/
@@ -202,7 +200,7 @@ h3.welcometitle {
 
 main figure.town {
 
-  box-shadow: 0 0 10px #c1292e;
+  box-shadow: 0 0 10px #6f1a07;
   grid-row: 2;
 
 }
@@ -232,8 +230,9 @@ main figure.contact img {
 .news {
 
   border: 1px solid black;
-  box-shadow: 0 0 10px #c1292e;
+  box-shadow: 0 0 10px #6f1a07;
   grid-row: 3;
+  background-color: #93827f;
 }
 
 .secTitles {
@@ -245,24 +244,24 @@ main figure.contact img {
   display: flex;
   flex-direction: column;
 
-  background-color: #bbb;
+  background-color: #93827f;
   border: 1px solid #000;
-  box-shadow: 0 0 10px #c1292e;
+  box-shadow: 0 0 10px #6f1a07;
 }
 
-.eventArticle {
+/*.eventArticle {
   background-color: ;
-}
+}*/
 
 .weather {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-color: #c26265;
+  background-color: #b5d6d6;
   border: 1px solid #000;
-  box-shadow: 0 0 10px #c1292e;
-  color: #fff;
+  box-shadow: 0 0 10px #6f1a07;
+  color: black;
   font-size: xx-large;
 }
 
@@ -275,7 +274,7 @@ main figure.contact img {
 .speed,
 .chill {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #fff;
+  color: black;
 }
 
 .temp {
@@ -285,16 +284,24 @@ main figure.contact img {
 
 .join {
 
-  background-color: #bbb;
+  background-color: #93827f;
   border: 1px solid #000;
-  box-shadow: 0 0 10px #c1292e;
+  box-shadow: 0 0 10px #6f1a07;
 }
 
 .spotlight {
 
-  background-color: #bbb;
+  background-color: #93827f;
   border: 1px solid #000;
-  box-shadow: 0 0 10px #c1292e;
+  box-shadow: 0 0 10px #6f1a07;
+}
+
+.spotlightCommunity {
+  background-color: #93827f;
+}
+
+.spotlightHistory {
+  background-color: #93827f;
 }
 
 .clearfix:after {
