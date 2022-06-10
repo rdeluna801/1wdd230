@@ -3,12 +3,16 @@
     justify-items: start;
   }
 
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
   nav button {
     display: none;
   }
 
   nav ul#primaryNav {
-    display: flex;
     border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
 

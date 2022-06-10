@@ -3,6 +3,20 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+:root {
+  --cinereous: #93827f;
+  --warmBlack: #034748;
+  --oldGold: #bfab25;
+  --barnRed: #6f1a07;
+  --powderBlue: #b5d6d6;
+  --red: #c1292e;
+  --blue: #7fc8f8;
+  --yellow: #f8f4a6;
+  --navBlue: #094d92;
+  --navMedBlue: #053364;
+  --navDarkBlue: #011936;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -60,26 +74,9 @@ header h1 {
   margin-left: 1.5rem;
 }
 
-/*footer area*/
-footer {
-  background-color: #094d92;
-  border: 1px solid #094d92;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-footer p {
-  color: #fff;
-  font-family: "Lobster", cursive;
-  font-size: 2rem;
-}
-
-footer div {
-  font-family: "Playfair Display", serif;
-  color: #fff;
-  font-size: 1.25rem;
+h2 {
+  color: #536878;
+  font-family: "Cinzel", serif;
 }
 
 div.currentdate {
@@ -90,20 +87,7 @@ div.currentdate {
   text-align: center;
 }
 
-h2 {
-  color: #536878;
-  font-family: "Cinzel", serif;
-}
 
-h3 {
-  color: black;
-  font-family: "Cinzel", serif;
-}
-
-.rname .projname {
-  font-size: 1rem;
-  font-family: "Playfair Display", serif;
-}
 
 /*navigation area*/
 nav {
@@ -115,6 +99,11 @@ nav {
 
 nav ul {
   list-style-type: none;
+}
+
+h3 {
+  color: black;
+  font-family: "Cinzel", serif;
 }
 
 nav button {
@@ -310,9 +299,125 @@ main figure.contact img {
   clear: both;
 }
 
-/*.norm:hover {
-  box-shadow: 0 0 50px #333;
-}*/
+
+
+/*form*/
+
+section#form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.formid {
+
+  margin: 0;
+  border: 1px solid #bbb;
+  padding: 0.5rem;
+  width: 475px;
+  background-color: #abe;
+}
+
+form {
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr 1fr;
+  width: 425px;
+  align-items: center;
+}
+
+form h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  padding: 0.35rem;
+  font-size: 1.1rem;
+}
+
+label {
+  text-align: right;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #bed;
+}
+
+#message {
+  display: none;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #aa3333;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+#message,
+button {
+  grid-column: 1/3;
+}
+
+#keyphrase:invalid {
+  background-color: lightcoral;
+  animation: shaketext 500ms;
+}
+
+input:valid+input::before {
+  content: "👍🏼";
+}
+
+@keyframes shaketext {
+  25% {
+    transform: translateX(3px);
+  }
+
+  50% {
+    transform: translateX(-3px);
+  }
+
+  75% {
+    transform: translateX(3px);
+  }
+}
+
+/* form */
+/*footer area*/
+footer {
+  background-color: #094d92;
+  border: 1px solid #094d92;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #fff;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+
+footer div {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.rname .projname {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+/*footer*/
+/*discover page*/
 main.discoverGrid {
   display: flex;
   flex-direction: column;
@@ -328,3 +433,5 @@ main.discoverGrid {
   border: 2px solid black;
   box-shadow: 0 0 15px #555;
 }
+
+/*discover page*/

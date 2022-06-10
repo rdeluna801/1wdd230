@@ -7,5 +7,5 @@ const options = {
 };
 date2.textContent = new Date().toLocaleDateString('en-UK', options);
 
-const date1 = document.querySelector('.copyrightdate');
-date1.textContent = "2022";
+/*const date1 = document.querySelector('.copyrightdate');
+date1.textContent = "2022";*/
