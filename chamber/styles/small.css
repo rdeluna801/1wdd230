@@ -88,7 +88,7 @@ div.currentdate {
 
 
 /*navigation area*/
-nav {
+nav.indexdiv {
   background-color: #011936;
   margin: 0 auto;
   max-width: 100%;
