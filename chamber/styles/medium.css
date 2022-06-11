@@ -1,11 +1,35 @@
 @media only screen and (min-width: 35rem) {
+
+  /*:root {
+    --cinereous: #93827f;
+    --warmBlack: #034748;
+    --oldGold: #bfab25;
+    --barnRed: #6f1a07;
+    --powderBlue: #b5d6d6;
+    --red: #c1292e;
+    --blue: #7fc8f8;
+    --yellow: #f8f4a6;
+    --navBlue: #094d92;
+    --navMedBlue: #053364;
+    --navDarkBlue: #011936;
+  }*/
   header {
     justify-items: start;
+    max-width: 100%;
   }
 
-  nav {
+  header h1 {
+    font-size: 4em;
+  }
+
+  .headerflex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  nav.indexdiv {
+    display: flex;
+    flex-direction: row;
   }
 
   nav button {
