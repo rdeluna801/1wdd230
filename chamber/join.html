@@ -38,7 +38,7 @@
             </figure>
         </div>
     </header>
-    <nav>
+    <nav id="navForm">
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul class="active" id="primaryNav">
             <li><a href="/Users/randideluna/wdd230/chamber/index.html">Home</a></li>
@@ -67,12 +67,14 @@
                     <label for="lname">Last name:</label>
                     <input type="text" id="lname" name="lname" required />
                     <label for="email">Email address:</label>
-                    <input type="text" id="email" name="email" required />
+                    <input type="text" id="email" name="email" required placeholder="example@address.com" />
                     <label for="phone">Phone number:</label>
-                    <input type="phone" id="phone" name="phone" />
+                    <input type="tel" id="phone" name="phone" required />
                     <label for="bname">Business name:</label>
                     <input type="text" id="bname" name="bname" required />
-                    <label for="keyphrase">Key Phrase:</label>
+                    <label for="position">Business Position Title:</label>
+                    <input type="text" id="title" name="title" pattern="[a-z]*" required />
+                    <label for=" keyphrase">Key Phrase:</label>
                     <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required
                         placeholder="Use letters only" /> <!-- {min,max} -->
                     <label for="keyphrase2">Re-enter Key Phrase:</label>
