@@ -15,6 +15,10 @@ html {
   --navBlue: #094d92;
   --navMedBlue: #053364;
   --navDarkBlue: #011936;
+  --secondtitles: 'Cinzel', serif;
+  --titles: 'Lobster', cursive;
+  --regletters: 'Playfair Display', serif;
+
 }
 
 * {
@@ -25,7 +29,7 @@ html {
 
 body {
   max-width: 100%;
-  background-color: #bfab25;
+  background-color: var(--cinereous);
 
 }
 
@@ -67,7 +71,7 @@ header figure.linklogo {
 header h1 {
 
   font-family: "Lobster", cursive;
-  font-size: 2rem;
+  font-size: 1.5em;
   color: #fff;
   margin-left: 1.5rem;
 }
@@ -95,34 +99,6 @@ nav#indexdiv */
   margin: 0 auto;
   max-width: 100%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-h3 {
-  color: black;
-  font-family: "Cinzel", serif;
-}
-
-nav button {
-  margin: 0.2rem 2vw;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: #555;
-}
-
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-  background: linear-gradient(90deg, transparent, #c1292eff, transparent) top / var(--navMedBlue, 0) 10px no-repeat;
-  transition: 0.5s;
 }
 
 nav ul li.active a {
@@ -157,6 +133,36 @@ button#hamburgerBtn.open span:nth-child(1) {
 button#hamburgerBtn.open span:nth-child(2) {
   display: block;
 }
+
+nav ul {
+  list-style-type: none;
+}
+
+h3 {
+  color: black;
+  font-family: "Cinzel", serif;
+}
+
+nav button {
+  margin: 0.2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #555;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  background: linear-gradient(90deg, transparent, var(--cinereous), transparent) top / var(--navMedBlue, 0) 10px no-repeat;
+  transition: 0.5s;
+}
+
+
 
 /*nav area*/
 /*main section*/
@@ -302,7 +308,7 @@ main figure.contact img {
 /*form*/
 
 section#form {
-  height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,10 +317,11 @@ section#form {
 div.formid {
 
   margin: 0;
-  border: 1px solid #bbb;
+  border: 1px solid black;
   padding: 0.5rem;
   width: 475px;
   background-color: #abe;
+  box-shadow: 0 0 10px var(--warmBlack);
 }
 
 form {
@@ -337,6 +344,11 @@ select,
 button {
   padding: 0.35rem;
   font-size: 1.1rem;
+
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -347,13 +359,14 @@ input:focus,
 textarea:focus,
 select:focus {
   background-color: #bed;
+
 }
 
 #message {
   display: none;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: #aa3333;
+  background-color: var(--oldGold);
   color: #fff;
   padding: 0.5rem;
 }
@@ -364,7 +377,7 @@ button {
 }
 
 #keyphrase:invalid {
-  background-color: lightcoral;
+  background-color: var(--oldGold);
   animation: shaketext 500ms;
 }
 
@@ -399,19 +412,19 @@ footer {
 
 footer p {
   color: #fff;
-  font-family: "Lobster", cursive;
+  font-family: var(--titles);
   font-size: 2rem;
 }
 
 footer div {
-  font-family: "Playfair Display", serif;
+  font-family: var(--regletters);
   color: #fff;
   font-size: 1.25rem;
 }
 
 .rname .projname {
   font-size: 1rem;
-  font-family: "Playfair Display", serif;
+  font-family: var(--regletters);
 }
 
 /*footer*/
@@ -420,6 +433,7 @@ main.discoverGrid {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .church img {
@@ -430,6 +444,20 @@ main.discoverGrid {
 .snowday img {
   border: 2px solid black;
   box-shadow: 0 0 15px #555;
+}
+
+.message {
+  font-size: x-large;
+  font-family: var(--regletters);
+  text-align: center;
+}
+
+.norm:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+.blur {
+  filter: blur(1px) grayscale(75%);
 }
 
 /*discover page*/
