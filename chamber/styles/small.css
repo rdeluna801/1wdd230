@@ -452,12 +452,26 @@ main.discoverGrid {
   text-align: center;
 }
 
-.norm:hover {
-  box-shadow: 0 0 50px #333;
-}
+
 
 .blur {
   filter: blur(1px) grayscale(75%);
 }
+
+.stores img {
+  border: 2px solid black;
+  box-shadow: 0 0 15px #555;
+}
+
+.clocktower img {
+  border: 2px solid black;
+  box-shadow: 0 0 15px #555;
+}
+
+.historytitle {
+
+  margin-left: 1em;
+}
+
 
 /*discover page*/
