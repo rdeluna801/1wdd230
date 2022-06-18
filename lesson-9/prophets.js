@@ -20,26 +20,26 @@ fetch(requestURL)
             let portrait = document.createElement('img');
             let name = prophet.name;
             let last = prophet.lastname;
+            let order = prophet.order;
             let birth = document.createElement('p');
             let place = document.createElement('p');
             // Change the textContent property of the h2 element to contain the prophet's full name
-            h2.textContent = `${name}${last}`;
+            h2.textContent = `${name} ${last} ${ order}`;
             birth.textContent = `Birthdate: ${prophet.birthdate}`;
             place.textContent = `Birthplace: ${prophet.birthplace}`;
             // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
             let a = "Portrait of ";
             portrait.setAttribute('src', prophet.imageurl);
-            //document.setAttribute('alt', 'Portait of ' + prophet.name + ' ' + prophet.lastname);
-            portrait.setAttribute('alt', `${a }${name }${last}`);
+            portrait.setAttribute('alt', `${a }${name } ${last}`);
             portrait.setAttribute('loading', 'lazy');
 
-            // Add/append the section(card) with the h2 element
+
             card.appendChild(h2);
             card.appendChild(portrait);
             card.appendChild(birth);
             card.appendChild(place);
 
-            // Add/append the existing HTML div with the cards class with the section(card)
+
             document.querySelector('div.cards').appendChild(card);
         }
 
