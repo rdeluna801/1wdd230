@@ -35,7 +35,7 @@ body {
 
 /*header*/
 header {
-  background-color: #094d92;
+  background-color: var(--warmBlack);
   border: 1px solid #094d92;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -169,7 +169,7 @@ nav ul li a {
 main section {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 5px;
+  row-gap: 2em;
 }
 
 main p {
@@ -181,31 +181,33 @@ main p {
 }
 
 .hero {
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 h3.welcometitle {
   font-family: "Lobster", cursive;
-  color: #094d92;
-  font-size: 2rem;
-  grid-row: 1;
+  color: var(--warmBlack);
+  font-size: 3em;
+  text-shadow: var(--warmBlack);
 
 }
 
-main figure.town {
+figure.town {
 
-  box-shadow: 0 0 10px #6f1a07;
-  grid-row: 2;
+  box-shadow: 0 0 30px black;
 
 }
 
-main figure.town img {
-
+figure.town img {
+  max-width: 100%;
+  display: block;
   border: 1px solid #000;
-  box-shadow: 0 0 15px rgb(71, 55, 55);
+  box-shadow: 0 0 15px black;
 
 }
 
@@ -213,20 +215,20 @@ main figure.companyOne img {
   max-width: 100%;
 
   border: 1px solid #000;
-  box-shadow: 0 0 15px rgb(71, 55, 55);
+  box-shadow: 0 0 15px black;
 }
 
 main figure.contact img {
   border: 1px solid #000;
-  box-shadow: 0 0 15px rgb(71, 55, 55);
+  box-shadow: 0 0 25px black;
 }
 
 .news {
 
   border: 1px solid black;
-  box-shadow: 0 0 10px #6f1a07;
+  box-shadow: 0 0 30px black;
   grid-row: 3;
-  background-color: #93827f;
+  background-color: var(--cinereous);
 }
 
 .secTitles {
@@ -240,7 +242,7 @@ main figure.contact img {
 
   background-color: #93827f;
   border: 1px solid #000;
-  box-shadow: 0 0 10px #6f1a07;
+  box-shadow: 0 0 30px black;
 }
 
 /*weather tile*/
@@ -249,16 +251,16 @@ main figure.contact img {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-color: #b5d6d6;
+  background-color: var(--powderBlue);
   border: 1px solid #000;
-  box-shadow: 0 0 10px #6f1a07;
+  box-shadow: 0 0 30px black;
   color: black;
   font-size: xx-large;
 }
 
 .crisis {
   border: 2px solid black;
-  box-shadow: 0 0 15px #555;
+  box-shadow: 0 0 15px black;
 }
 
 .temp,
@@ -275,25 +277,62 @@ main figure.contact img {
 
 /*weather tile*/
 .join {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #93827f;
   border: 1px solid #000;
-  box-shadow: 0 0 10px #6f1a07;
+  box-shadow: 0 0 30px black;
 }
 
 .spotlight {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #93827f;
   border: 1px solid #000;
-  box-shadow: 0 0 10px #6f1a07;
+  box-shadow: 0 0 30px black;
 }
 
 .spotlightCommunity {
-  background-color: #93827f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 30px black;
+  border: 1px solid #000;
+}
+
+.spotlightCommunity h4 {
+  font-size: x-large;
 }
 
 .spotlightHistory {
-  background-color: #93827f;
+  background-color: var(--powderBlue);
+  box-shadow: 0 0 30px black;
+  border: 1px solid #000;
+
+}
+
+.voting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 30px black;
+  border: 1px solid #000;
+  background-color: var(--cinereous);
+}
+
+.votes {
+  display: block;
+  max-width: 100%;
+  border: 2px solid black;
+  box-shadow: 0 0 15px black;
+}
+
+.voting h4 {
+  font-family: var(--regletters);
+  font-size: x-large;
 }
 
 /*main*/
@@ -321,7 +360,7 @@ div.formid {
   padding: 0.5rem;
   width: 475px;
   background-color: #abe;
-  box-shadow: 0 0 10px var(--warmBlack);
+  box-shadow: 0 0 10px black;
 }
 
 form {
@@ -402,8 +441,8 @@ input:valid+input::before {
 /* form */
 /*footer area*/
 footer {
-  background-color: #094d92;
-  border: 1px solid #094d92;
+  background-color: var(--warmBlack);
+  border: 1px solid var(--warmBlack);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -438,12 +477,12 @@ main.discoverGrid {
 
 .church img {
   border: 2px solid black;
-  box-shadow: 0 0 15px #555;
+  box-shadow: 0 0 15px black;
 }
 
 .snowday img {
   border: 2px solid black;
-  box-shadow: 0 0 15px #555;
+  box-shadow: 0 0 15px black;
 }
 
 .message {
@@ -460,12 +499,12 @@ main.discoverGrid {
 
 .stores img {
   border: 2px solid black;
-  box-shadow: 0 0 15px #555;
+  box-shadow: 0 0 15px black;
 }
 
 .clocktower img {
   border: 2px solid black;
-  box-shadow: 0 0 15px #555;
+  box-shadow: 0 0 15px black;
 }
 
 .historytitle {

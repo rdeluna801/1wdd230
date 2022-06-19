@@ -12,6 +12,12 @@
     --navBlue: #094d92;
     --navMedBlue: #053364;
     --navDarkBlue: #011936;
+      --secondtitles: 'Cinzel',
+      serif;
+      --titles: 'Lobster',
+      cursive;
+      --regletters: 'Playfair Display',
+      serif;
   }*/
   header {
     justify-items: start;
@@ -20,6 +26,19 @@
 
   header h1 {
     font-size: 4em;
+  }
+
+  h4 {
+    font-family: var(--regletters);
+    font-size: larger;
+    margin-left: 1.5em;
+
+  }
+
+  h3 {
+    font-size: x-large;
+    margin-left: 1em;
+    ;
   }
 
   .headerflex {
@@ -38,9 +57,6 @@
 
   nav ul#primaryNav {
     border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
-
-  #primaryNav {
     justify-content: center;
   }
 
@@ -49,39 +65,9 @@
     border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
 
-  nav ul li img {
-    max-width: 30px;
-    max-height: 30px;
-    padding: 5px;
-  }
-
-  .norm:hover {
-    box-shadow: 0 0 50px #333;
-  }
 
 
 
-
-  /*.news {
-    grid-column: 1/3;
-    grid-row: 2;
-
-  }
-
-  .join {
-    grid-column: 1/3;
-    grid-row: 3;
-  }
-
-  .events {
-    grid-column: 1/2;
-    grid-row: 4;
-  }
-
-  .weather {
-    grid-column: 2/3;
-    grid-row: 4;
-  }*/
 
   /* unvisited link */
   a:link {
@@ -101,5 +87,9 @@
   /* selected link */
   a:active {
     color: #f8f4a6;
+  }
+
+  .norm:hover {
+    box-shadow: 0 0 50px #333;
   }
 }
