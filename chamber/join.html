@@ -61,7 +61,7 @@
 
 
             <div class="formid">
-                <h1>Fill out the form below to begin membership</h1>
+                <h2>Fill out the form below to begin membership</h2>
                 <form action="" method="get">
                     <div id="message"></div>
                     <label for="fname">First name:</label>
@@ -76,7 +76,7 @@
                     <input type="text" id="bname" name="bname" required />
                     <label for="position">Business Position Title:</label>
                     <input type="text" id="title" name="title" pattern="[a-z]*" required />
-                    <label for=" keyphrase">Key Phrase:</label>
+                    <label for="keyphrase">Key Phrase:</label>
                     <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required
                         placeholder="Use letters only" /> <!-- {min,max} -->
                     <label for="keyphrase2">Re-enter Key Phrase:</label>
@@ -84,6 +84,9 @@
 
                     <label for="comments">Message:</label>
                     <textarea id="comments" name="comments" required></textarea>
+                    <label for="membership">Membership Level:</label>
+                    <input type="text" id="membership" name="membership" required
+                        placeholder="Enter Desired Level of Membership" />
                     <button id="btnSubmit" type="submit">Submit Completed Form</button>
                     <input type="hidden" value="4">
                 </form>

@@ -358,22 +358,34 @@ div.formid {
   margin: 0;
   border: 1px solid black;
   padding: 0.5rem;
-  width: 475px;
-  background-color: #abe;
-  box-shadow: 0 0 10px black;
+  width: 500px;
+  background-color: var(--warmBlack);
+  box-shadow: 0 0 30px black;
+  margin-bottom: 1em;
+
 }
 
 form {
   display: grid;
   grid-gap: 0.25rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   width: 425px;
   align-items: center;
+  margin-left: 1em;
 }
 
-form h1 {
+form h2 {
   font-size: 1.5rem;
   text-align: center;
+
+
+}
+
+div.formid h2 {
+  font-family: var(--regletters);
+  color: white;
+  margin-left: 5px;
+
 }
 
 label,
@@ -387,11 +399,12 @@ button {
 }
 
 input {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 label {
   text-align: right;
+  color: white;
 }
 
 input:focus,
