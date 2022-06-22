@@ -19,3 +19,11 @@ function checkSame() {
         kp2.style.color = "#000";
     }
 }
+
+function errorfont() {
+    if (Input.name("fname") = "invalid") {
+        input.name("fname").placeholder.display = "white";
+    } else {
+        input.name("fname").placeholder.display = "black";
+    }
+}

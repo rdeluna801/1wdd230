@@ -410,7 +410,8 @@ label {
 input:focus,
 textarea:focus,
 select:focus {
-  background-color: #bed;
+  background-color: var(--red);
+  color: white;
 
 }
 
@@ -523,6 +524,14 @@ main.discoverGrid {
 .historytitle {
 
   margin-left: 1em;
+}
+
+article.history {
+
+  border-width: 3px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 15px black;
 }
 
 .park img {
