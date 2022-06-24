@@ -20,10 +20,10 @@ function checkSame() {
     }
 }
 
-function errorfont() {
-    if (Input.name("fname") = "invalid") {
-        input.name("fname").placeholder.display = "white";
-    } else {
-        input.name("fname").placeholder.display = "black";
-    }
-}
+//function errorfont() {
+//if (Input.name("fname") = //"invalid") {
+//input.name("fname").//placeholder.display = "white";
+//  } else {
+//  input.name("fname").//placeholder.display = //"black";
+// }
+//}

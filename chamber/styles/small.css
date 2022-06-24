@@ -101,18 +101,9 @@ nav#indexdiv */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
-nav ul li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
-}
 
-nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
-nav ul {
-  display: none;
-}
+
 
 nav ul.open {
   display: block;
