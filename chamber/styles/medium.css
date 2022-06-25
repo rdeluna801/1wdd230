@@ -24,12 +24,6 @@
     max-width: 100%;
   }
 
-  header h1 {
-    font-family: "Lobster", cursive;
-    font-size: 1.5em;
-    color: #fff;
-    margin-left: 1.5rem;
-  }
 
   h4 {
     font-family: var(--regletters);
@@ -58,6 +52,7 @@
 
   .navigation a {
     text-align: center;
+    color: white;
   }
 
   .navigation li:first-child {
@@ -66,12 +61,12 @@
 
   /* unvisited link */
   a:link {
-    color: var(--warmBlack);
+    color: white;
   }
 
   /* visited link */
   a:visited {
-    color: var(--warmBlack);
+    color: white;
   }
 
   /* mouse over link */
@@ -82,7 +77,7 @@
 
   /* selected link */
   a:active {
-    color: var(--warmBlack);
+    color: white;
   }
 
   .norm:hover {

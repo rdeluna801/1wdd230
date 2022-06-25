@@ -36,6 +36,7 @@ header {
   background-color: var(--warmBlack);
   border: 1px solid #094d92;
   display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -44,13 +45,12 @@ header figure.logo {
   max-width: 100%;
 }
 
-.headerflex {
-  display: flex;
-  flex-direction: column;
-}
 
-header h1 {
-  display: none;
+h1 {
+  font-size: 3rem;
+  font-family: var(--titles);
+  color: white;
+  margin-right: 3em;
 }
 
 h2 {
@@ -93,7 +93,7 @@ nav {
   padding: 0.75rem;
   text-align: left;
   text-decoration: none;
-  color: black;
+  color: white;
   transition: 0.5s;
   font-family: "Cinzel", serif;
   background: linear-gradient(90deg, transparent, var(--cinereous), transparent) top / var(--warmBlack, 0) 10px no-repeat;
