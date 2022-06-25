@@ -25,20 +25,21 @@
   }
 
   header h1 {
-    font-size: 4em;
+    font-family: "Lobster", cursive;
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 1.5rem;
   }
 
   h4 {
     font-family: var(--regletters);
     font-size: larger;
     margin-left: 1.5em;
-
   }
 
   h3 {
     font-size: x-large;
     margin-left: 1em;
-    ;
   }
 
   .headerflex {
@@ -46,49 +47,42 @@
     flex-direction: row;
   }
 
-  nav button {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
     display: none;
   }
 
-
-
-
-  nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-  }
-
-  nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  nav ul {
-    /*display: none;*/
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-
   /* unvisited link */
   a:link {
-    color: #f8f4a6;
+    color: var(--warmBlack);
   }
 
   /* visited link */
   a:visited {
-    color: #7fc8f8;
+    color: var(--warmBlack);
   }
 
   /* mouse over link */
   a:hover {
-    color: #c1292e;
+    color: white;
+    box-shadow: 0 0 50px #333;
   }
 
   /* selected link */
   a:active {
-    color: #f8f4a6;
+    color: var(--warmBlack);
   }
 
   .norm:hover {

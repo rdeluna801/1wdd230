@@ -15,10 +15,9 @@ html {
   --navBlue: #094d92;
   --navMedBlue: #053364;
   --navDarkBlue: #011936;
-  --secondtitles: 'Cinzel', serif;
-  --titles: 'Lobster', cursive;
-  --regletters: 'Playfair Display', serif;
-
+  --secondtitles: "Cinzel", serif;
+  --titles: "Lobster", cursive;
+  --regletters: "Playfair Display", serif;
 }
 
 * {
@@ -30,7 +29,6 @@ html {
 body {
   max-width: 100%;
   background-color: var(--cinereous);
-
 }
 
 /*header*/
@@ -38,15 +36,12 @@ header {
   background-color: var(--warmBlack);
   border: 1px solid #094d92;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
   justify-items: center;
 }
 
 header figure.logo {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  margin: 0;
+  max-width: 100%;
 }
 
 .headerflex {
@@ -54,26 +49,8 @@ header figure.logo {
   flex-direction: column;
 }
 
-.fblogo {
-
-  margin: 0;
-
-  margin-left: 10px;
-}
-
-header figure.linklogo {
-
-  margin: 0;
-  padding: .5rem;
-
-}
-
 header h1 {
-
-  font-family: "Lobster", cursive;
-  font-size: 1.5em;
-  color: #fff;
-  margin-left: 1.5rem;
+  display: none;
 }
 
 h2 {
@@ -82,78 +59,62 @@ h2 {
 }
 
 div.currentdate {
-
   font-family: "Playfair Display", serif;
   color: black;
   font-size: 2rem;
   text-align: center;
 }
 
-
-
 /*navigation area*/
 /*nav#navForm,
 nav#indexdiv */
-#primarynav {
-  background-color: var(--navDarkBlue);
+nav {
+  background-color: var(--warmBlack);
   margin: 0 auto;
   max-width: 100%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
+.navigation {
+  list-style: none;
+  padding: 0;
+}
 
-
-
-
-nav ul.open {
+.navigation li:first-child {
   display: block;
 }
 
-button#hamburgerBtn span:nth-child(1) {
-  display: block;
-}
-
-button#hamburgerBtn span:nth-child(2) {
+.navigation li {
   display: none;
 }
 
-button#hamburgerBtn.open span:nth-child(1) {
-  display: none;
-}
-
-button#hamburgerBtn.open span:nth-child(2) {
+.navigation a {
   display: block;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-h3 {
-  color: black;
-  font-family: "Cinzel", serif;
-}
-
-nav button {
-  margin: 0.2rem 2vw;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: #555;
-}
-
-nav ul li a {
-  display: block;
+  padding: 0.75rem;
+  text-align: left;
   text-decoration: none;
-  color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-  background: linear-gradient(90deg, transparent, var(--cinereous), transparent) top / var(--navMedBlue, 0) 10px no-repeat;
+  color: black;
   transition: 0.5s;
+  font-family: "Cinzel", serif;
+  background: linear-gradient(90deg, transparent, var(--cinereous), transparent) top / var(--warmBlack, 0) 10px no-repeat;
 }
 
+.navigation a.ham::before {
+  content: &#9776;
+}
 
+.navigation a:hover {
+  color: black;
+  background-color: #034748;
+}
+
+.responsive li {
+  display: block;
+}
+
+.responsive a.ham::before {
+  content: &#x2612;
+}
 
 /*nav area*/
 /*main section*/
@@ -164,8 +125,7 @@ main section {
 }
 
 main p {
-  font-family: 'Playfair Display',
-    serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   padding: 1em;
   margin-left: 2%;
@@ -177,7 +137,6 @@ main p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 h3.welcometitle {
@@ -185,13 +144,10 @@ h3.welcometitle {
   color: var(--warmBlack);
   font-size: 3em;
   text-shadow: var(--warmBlack);
-
 }
 
 figure.town {
-
   box-shadow: 0 0 30px black;
-
 }
 
 figure.town img {
@@ -199,7 +155,6 @@ figure.town img {
   display: block;
   border: 1px solid #000;
   box-shadow: 0 0 15px black;
-
 }
 
 main figure.companyOne img {
@@ -215,7 +170,6 @@ main figure.contact img {
 }
 
 .news {
-
   border: 1px solid black;
   box-shadow: 0 0 30px black;
   grid-row: 3;
@@ -257,7 +211,7 @@ main figure.contact img {
 .temp,
 .speed,
 .chill {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: black;
 }
 
@@ -302,7 +256,6 @@ main figure.contact img {
   background-color: var(--powderBlue);
   box-shadow: 0 0 30px black;
   border: 1px solid #000;
-
 }
 
 .voting {
@@ -333,19 +286,15 @@ main figure.contact img {
   clear: both;
 }
 
-
-
 /*form*/
 
 section#form {
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 div.formid {
-
   margin: 0;
   border: 1px solid black;
   padding: 0.5rem;
@@ -353,7 +302,6 @@ div.formid {
   background-color: var(--warmBlack);
   box-shadow: 0 0 30px black;
   margin-bottom: 1em;
-
 }
 
 form {
@@ -368,15 +316,12 @@ form {
 form h2 {
   font-size: 1.5rem;
   text-align: center;
-
-
 }
 
 div.formid h2 {
   font-family: var(--regletters);
   color: white;
   margin-left: 5px;
-
 }
 
 label,
@@ -386,7 +331,6 @@ select,
 button {
   padding: 0.35rem;
   font-size: 1.1rem;
-
 }
 
 input {
@@ -403,7 +347,6 @@ textarea:focus,
 select:focus {
   background-color: var(--red);
   color: white;
-
 }
 
 #message {
@@ -496,8 +439,6 @@ main.discoverGrid {
   text-align: center;
 }
 
-
-
 .blur {
   filter: blur(1px) grayscale(75%);
 }
@@ -513,12 +454,10 @@ main.discoverGrid {
 }
 
 .historytitle {
-
   margin-left: 1em;
 }
 
 article.history {
-
   border-width: 3px;
   background-color: white;
   border: 2px solid black;
@@ -529,6 +468,5 @@ article.history {
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
-
 
 /*discover page*/
