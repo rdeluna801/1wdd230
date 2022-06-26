@@ -99,9 +99,9 @@ nav {
   background: linear-gradient(90deg, transparent, var(--cinereous), transparent) top / var(--warmBlack, 0) 10px no-repeat;
 }
 
-.navigation a.ham::before {
+/*.navigation a.ham::before {
   content: &#9776;
-}
+}*/
 
 .navigation a:hover {
   color: black;
@@ -112,9 +112,9 @@ nav {
   display: block;
 }
 
-.responsive a.ham::before {
+/*.responsive a.ham::before {
   content: &#x2612;
-}
+}*/
 
 /*nav area*/
 /*main section*/
