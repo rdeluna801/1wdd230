@@ -51,6 +51,7 @@ h1 {
   font-family: var(--titles);
   color: white;
   margin-right: 3em;
+
 }
 
 h2 {
@@ -417,23 +418,26 @@ footer div {
 /*footer*/
 /*discover page*/
 main.discoverGrid {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .church img {
+  display: block;
+  max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
 
 .snowday img {
+  display: block;
+  max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
 
 .message {
+
   font-size: x-large;
   font-family: var(--regletters);
   text-align: center;
@@ -444,20 +448,26 @@ main.discoverGrid {
 }
 
 .stores img {
+  display: block;
+  max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
 
 .clocktower img {
+  display: block;
+  max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
 
 .historytitle {
   margin-left: 1em;
+
 }
 
 article.history {
+
   border-width: 3px;
   background-color: white;
   border: 2px solid black;
@@ -465,6 +475,8 @@ article.history {
 }
 
 .park img {
+  display: block;
+  max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
