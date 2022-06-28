@@ -53,7 +53,7 @@
                 <form action="" method="get">
                     <div id="message"></div>
                     <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname" required placeholder="Enter your first name" />
+                    <input type="text" id="fname" name="fname" required placeholder="Enter Your First Name" />
                     <label for="lname">Last name:</label>
                     <input type="text" id="lname" name="lname" required />
                     <label for="email">Email address:</label>
@@ -61,7 +61,7 @@
                     <label for="phone">Phone number:</label>
                     <input type="tel" id="phone" name="phone" required />
                     <label for="bname">Business name:</label>
-                    <input type="text" id="bname" name="bname" required />
+                    <input type="text" id="bname" name="bname" required placeholder="Enter Business Name" />
                     <label for="position">Business Position Title:</label>
                     <input type="text" id="title" name="title" pattern="[a-z]*" required />
                     <label for="keyphrase">Key Phrase:</label>
@@ -72,11 +72,19 @@
 
                     <label for="comments">Message:</label>
                     <textarea id="comments" name="comments" required></textarea>
-                    <label for="membership">Membership Level:</label>
-                    <input type="text" id="membership" name="membership" required
-                        placeholder="Enter Desired Level of Membership" />
+                    <label for="level">Choose a Membership level:</label>
+                    <select id="level" name="level" required>
+                        <option value="blank"></option>
+                        <option value="np">Non-Profit Organization</option>
+                        <option value="gold">Gold Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                    </select>
+
                     <button id="btnSubmit" type="submit">Submit Completed Form</button>
                     <input type="hidden" value="4">
+
+
                 </form>
             </div>
 
@@ -84,12 +92,13 @@
 
 
 
-
-
         </section>
+        <script src="js/submit.js"></script>
+        <script src="js/local.js"></script>
     </main>
     <footer>
-        <p>City of Holladay Chamber of Commerce</p>
+        <span class="message"></span>
+        <p class="title">City of Holladay Chamber of Commerce</p>
         <div class="infoSite">info@holladaycommerce.org</div>
         <div>
             &copy;<span class="copyrightdate"></span>City of Holladay Chamber of
