@@ -1,15 +1,12 @@
 const kp1 = document.querySelector("#keyphrase");
 const kp2 = document.querySelector("#keyphrase2");
 const message = document.querySelector("#message");
-const newPage = document.querySelector("#btnSubmit");
 
 kp2.addEventListener("focusout", checkSame);
-newPage.addEventListener("submit", page);
 
-function page()
-if (kp1.value == kp2.value && newPage) {
 
-}
+
+
 // This should be refactored.
 function checkSame() {
     if (kp1.value !== kp2.value) {
