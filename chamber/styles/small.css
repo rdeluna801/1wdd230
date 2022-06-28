@@ -15,6 +15,10 @@ html {
   --navBlue: #094d92;
   --navMedBlue: #053364;
   --regletters: "Playfair Display", serif;
+  --secondtitles: 'Cinzel',
+    serif;
+  --titles: 'Lobster',
+    cursive;
 }
 
 * {
@@ -405,6 +409,20 @@ input:valid+input::before {
 }
 
 /* form */
+/*thank you page*/
+h2.thankyou {
+  display: block;
+  font-family: var(--titles);
+  font-size: 6rem;
+  color: white;
+  border-style: double;
+  border-color: black;
+  text-shadow: 1px 1px 2px black,
+    0 0 1em grey,
+    0 0 0.2em darkgray;
+  text-align: center;
+}
+
 /*footer area*/
 footer {
   background-color: var(--warmBlack);
