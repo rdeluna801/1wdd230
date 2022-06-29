@@ -387,6 +387,18 @@ legend {
   border-left-color: #c1292e;
   border-left-width: 3px;
 }
+.membershipLevels {
+  color: white;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.1em black;
+  margin-left: 1.5em;
+}
+aside {
+  background-color: lightslategray;
+  border-color: black;
+  border: 2px solid;
+  box-shadow: 0 0 30px black;
+}
 #message,
 button {
   grid-column: 1;
