@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Great Harvest Bread Co.",
+    "address": "4655 south 2300 east",
+    "phone": 8012773277,
+    "website": "greatharvestutah.com",
+    "membership": "gold"
+  },
+  {
+    "name": "Hampton Inn",
+    "address": "3210 east Millrock Dr.",
+    "phone": "1800hampton",
+    "website": "hilton.com",
+    "membership": "silver"
+  },
+  {
+    "name": "Woodhouse Spas",
+    "address": "4690 south Holladay Blvd.",
+    "phone": 3854250595,
+    "website": "woodhousespas.com",
+    "membership": "bronze"
+  },
+  {
+    "name": "My Pie",
+    "address": "4655 south 2300 east suite #104",
+    "phone": 8017485888,
+    "website": "pizzayourway.com",
+    "membership": "gold"
+  },
+  {
+    "name": "Sono Food Park",
+    "address": "4747 Holladay Blvd.",
+    "phone": 8016167516,
+    "website": "sonofoodpark.com",
+    "membership": "bronze"
+  },
+  {
+    "name": "Holladay Arts Council",
+    "address": "4580 south 2300 east",
+    "phone": 8012729450,
+    "website": "holladayarts.org",
+    "membership": "non-profit"
+  },
+  {
+    "name": "AuntieRae's Sweets & Tea Parties",
+    "address": "4704 south Holladay Blvd.",
+    "phone": 8016793925,
+    "website": "auntieraes.com",
+    "membership": "silver"
+  },
+  {
+    "name": "Walgreens",
+    "address": "4714 south Holladay Blvd.",
+    "phone": 8012789767,
+    "website": "walgreens.com",
+    "membership": "walgreens.com"
+  },
+  {
+    "name": "All the Raige Dog Salon",
+    "address": "4034 south 2700 east",
+    "phone": 8019716959,
+    "website": "alltheraigedogsalon.com",
+    "membership": "bronze"
+  }
+]
