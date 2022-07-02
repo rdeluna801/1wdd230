@@ -16,21 +16,23 @@ function showList() {
 console.log;
 
 const requestURL = "https://rdeluna801.github.io/wdd230/chamber/data.json";
+const directSection = document.querySelector(".directSection");
 
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
-  .then(function (jsonObject) {
+  .then(function (jsonObject, members) {
     console.table(jsonObject);
   });
-const members = jsonObject["members"];
+let name = jsonObject();
 members.forEach(displayMembers);
-function displayMembers(member) {
+function displayMembers(members) {
   let directSection = document.createElement("section");
   let h3 = document.createElement("h3");
   let p = document.createElement("p");
-  h3.textContent = member.name;
+  h3.textContent = obj[member.name];
+  p.textContent = obj[member.website];
 
   card.appendChild(h3);
   card.appendChild(p);
