@@ -20,7 +20,7 @@ async function populate() {
   const response = await fetch(request);
   const members = await response.json();
 
-  //populateMembers(members);
+  populateMembers(members);
   populateCards(members);
 }
 
