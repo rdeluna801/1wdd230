@@ -15,7 +15,7 @@ function showList() {
 }
 
 async function populate() {
-  const requestURL = "data.json";
+  const requestURL = "https://rdeluna801.github.io/wdd230/chamber/data.json";
   const request = new Request(requestURL);
 
   const response = await fetch(request);
