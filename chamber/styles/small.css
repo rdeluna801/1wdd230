@@ -540,64 +540,75 @@ article.history {
   margin: 0 auto;
   border: 1px solid black;
   padding: 0.5rem;
-  max-width 700px;
-  background-color:#536878;
+  max-width: 700px;
+  background-color: #536878;
   font-family: var(--regletters);
 }
-.menu { 
+.menu {
   margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   background-color: #93827f;
-  text-align:center;
+  text-align: center;
 }
 .menu button {
   padding: 1rem;
 }
-article, .directSection {
+article,
+.directSection {
   margin: 0.75rem;
 }
 .directSection {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
-  background-color:#034748;
+  background-color: #034748;
 }
-.grid { display: grid;
-grid-template-columns: autofit, minmax(200px, 1fr);
-align-items: center;}
+.grid {
+  display: grid;
+  grid-template-columns: autofit, minmax(200px, 1fr);
+  align-items: center;
+}
 
-.list { display: flex;
-flex-direction: column;}
-
-.list section {display: flex;
-align-items: center;}
-.grid section {flex-direction: column;
-text-align: center;}
-.grid section > * {
-	margin: 0.1rem;
+.list {
+  display: flex;
+  flex-direction: column;
 }
 
 .list section {
-	flex-direction: row;
-	justify-content: left;
+  display: flex;
+  align-items: center;
+}
+.grid section {
+  flex-direction: column;
+  text-align: center;
+}
+.grid section > * {
+  margin: 0.1rem;
+}
+
+.list section {
+  flex-direction: row;
+  justify-content: left;
 }
 .list section > * {
-	margin: 0 1rem;
-	text-align: left;
+  margin: 0 1rem;
+  text-align: left;
 }
 
 .list section img {
-	display: none;}
+  display: none;
+}
 
-  section h3 {
-	font-size: 1.5rem;
+section h3 {
+  font-size: 1.5rem;
 }
 
 section a {
-	font-family: var(--regletters);
-	font-size: 0.9rem;
+  font-family: var(--regletters);
+  font-size: 0.9rem;
 }
 
 img {
-	height: 75px;
-	max-width: 100%;}
+  height: 75px;
+  max-width: 100%;
+}
