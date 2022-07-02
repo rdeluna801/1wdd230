@@ -14,34 +14,28 @@ function showList() {
   display.classList.remove("grid");
 }
 console.log;
-async function populate() {
-  const requestURL = "https://rdeluna801.github.io/wdd230/chamber/data.json";
-  const request = new Request(requestURL);
-  const response = await fetch(request);
-  const members = await response.json();
 
-  populateMembers(members);
-  populateCards(members);
+const requestURL = "https://rdeluna801.github.io/wdd230/chamber/data.json";
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+  });
+const members = jsonObject["members"];
+members.forEach(displayMembers);
+function displayMembers(member) {
+  let directSection = document.createElement("section");
+  let h3 = document.createElement("h3");
+  let p = document.createElement("p");
+  h3.textContent = member.name;
+
+  card.appendChild(h3);
+  card.appendChild(p);
+
+  document.querySelector("section.directSection").appendChild(directSection);
 }
 
-function populateCards(obj) {
-  const section = document.querySelector("section");
-  const members = obj["name"];
-
-  for (const member of members) {
-    const mySection = document.getElementsByClassName(".directSection");
-    const myh3 = document.getElementsByClassName(".names");
-    const myp = document.getElementsByClassName(".websites");
-    const para = document.createElement("p");
-
-    myh3.textContent = member.name;
-    myp.textContent = `${website}`;
-    para.textContent = `${phone}`;
-    mySection.appendChild(myh3);
-    mySection.appendChild(myp);
-    mySection.appendChild(para);
-
-    section.appendChild(section);
-  }
-}
 populate();
