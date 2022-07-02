@@ -13,11 +13,10 @@ function showList() {
   display.classList.add("list");
   display.classList.remove("grid");
 }
-
+console.log;
 async function populate() {
   const requestURL = "https://rdeluna801.github.io/wdd230/chamber/data.json";
   const request = new Request(requestURL);
-
   const response = await fetch(request);
   const members = await response.json();
 
