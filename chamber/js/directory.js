@@ -45,3 +45,4 @@ function populateCards(obj) {
     section.appendChild(section);
   }
 }
+populate();
