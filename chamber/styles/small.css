@@ -135,13 +135,12 @@ main p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 h3.welcometitle {
   font-family: "Lobster", cursive;
   color: var(--warmBlack);
-  font-size: 3em;
+  font-size: 2rem;
   text-shadow: var(--warmBlack);
 }
 
@@ -172,7 +171,7 @@ main figure.contact img {
   border: 1px solid black;
   box-shadow: 0 0 30px black;
   grid-row: 3;
-  background-color: var(--cinereous);
+  background-color: white;
 }
 
 .secTitles {
@@ -184,7 +183,7 @@ main figure.contact img {
   display: flex;
   flex-direction: column;
 
-  background-color: #93827f;
+  background-color: white;
   border: 1px solid #000;
   box-shadow: 0 0 30px black;
 }
@@ -199,19 +198,20 @@ main figure.contact img {
   border: 1px solid #000;
   box-shadow: 0 0 30px black;
   color: black;
-  font-size: xx-large;
+  font-size: 2rem;
+  font-family: var(--secondtitles);
 }
-
+.weath {
+  font-family: var(--secondtitles);
+  color: black;
+  border: 2px solid black;
+  box-shadow: 0 0 15px black;
+  padding: 15px;
+  background-color: white;
+}
 .crisis {
   border: 2px solid black;
   box-shadow: 0 0 15px black;
-}
-
-.temp,
-.speed,
-.chill {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: black;
 }
 
 .temp {
@@ -224,7 +224,7 @@ main figure.contact img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #93827f;
+  background-color: white;
   border: 1px solid #000;
   box-shadow: 0 0 30px black;
 }
@@ -233,7 +233,7 @@ main figure.contact img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #93827f;
+  background-color: white;
   border: 1px solid #000;
   box-shadow: 0 0 30px black;
 }
@@ -263,7 +263,7 @@ main figure.contact img {
   align-items: center;
   box-shadow: 0 0 30px black;
   border: 1px solid #000;
-  background-color: var(--cinereous);
+  background-color: white;
 }
 
 .votes {
@@ -449,6 +449,11 @@ footer {
   align-items: center;
   justify-content: center;
 }
+footer p {
+  font-family: var(--titles);
+  color: white;
+  font-size: 2rem;
+}
 
 .title {
   color: white;
@@ -608,7 +613,7 @@ section a {
   font-size: 0.9rem;
 }
 
-img {
+.directoryimg {
   height: 75px;
   max-width: 100%;
 }

@@ -36,9 +36,7 @@
       <li><a href="/Users/randideluna/wdd230/chamber/index.html">Home</a></li>
       <li> <a href="discover.html">Discover</a></li>
       <li> <a href="join.html">Join</a></li>
-      <li>
-        <a href="#">placeholder</a>
-      </li>
+      <li> <a href="directory.html">Directory</a> </li>
     </ul>
   </nav>
   <div class="currentdate"></div>
@@ -55,7 +53,7 @@
       <div class="hero">
         <h3 class="welcometitle">Welcome to Holladay!</h3>
         <figure class="town">
-          <img src="images/town1100.jpg" sizes="80vw" srcset="images/town200.jpg 200w, 
+          <img src="images/town1100.jpg" sizes="40vw" srcset="images/town200.jpg 200w, 
             images/town500.jpg 500w, 
             images/town800.jpg 800w" loading="lazy" alt="picture of the town at sunset">
         </figure>
@@ -82,9 +80,15 @@
           <img src="images/weather.png" size="80vw" alt="businessman with umbrella struggling against the wind"
             loading="lazy">
         </figure>
-        <span class="temp">35</span><br>
-        Wind Chill: <span class="chill"></span><br>
-        Wind Speed: <span class="speed">3.5</span><br>
+ <p  class="weath">
+      The current temperature in Holladay, Utah is
+      <span id="current-temp"></span> &deg;F
+     </p>
+         <figure class="weath">
+      <img src="" alt="" id="weather-icon" />
+      <figcaption></figcaption>
+    </figure>
+ 
       </div>
       <div class="join">
         <h3>Come Join Us!</h3>
@@ -169,6 +173,7 @@
     <div class="projname">WDD 230 Project</div>
     <div id="lastModified">Last Updated:</div>
   </footer>
+  <script src="js/weatherapi.js"></script>
   <script src="js/windchill.js"></script>
   <script src="js/modifiedTime.js"></script>
   <script src="js/currentTime.js"></script>
