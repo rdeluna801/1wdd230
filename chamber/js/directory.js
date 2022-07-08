@@ -24,22 +24,28 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.log(jsonObject);
-    let name = jsonObject["members"];
-    console.log(name);
-    members.forEach(displayMembers);
+    let members = jsonObject["members"];
+    console.log(members);
+    // members.forEach(displayMembers);
 
-    function displayMembers(members) {
+    for (let dog = 0; dog < 9; dog++) {
       let directSection = document.createElement("section");
       let h3 = document.createElement("h3");
       let p = document.createElement("p");
-      h3.textContent = obj[member.name];
-      p.textContent = obj[member.website];
+      let img = document.createElement("img");
+      let div = document.createElement("div");
+      console.log(members[dog]);
+      h3.textContent = members[dog].name;
+      p.textContent = members[dog].website;
+      img.src = members[dog].logo;
+      img.alt = members[dog].name;
+      div.className = "logo";
+      directSection.appendChild(h3);
+      directSection.appendChild(p);
+      div.appendChild(img);
+      directSection.appendChild(div);
 
-      card.appendChild(h3);
-      card.appendChild(p);
-
-      document
-        .querySelector("section.directSection")
-        .appendChild(directSection);
+      document.querySelector("article.grid").appendChild(directSection);
     }
+    function displayMembers(members) {}
   });

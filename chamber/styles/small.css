@@ -613,7 +613,7 @@ section a {
   font-size: 0.9rem;
 }
 
-.directoryimg {
+div.logo {
   height: 75px;
-  max-width: 100%;
+  width: 50%;
 }
