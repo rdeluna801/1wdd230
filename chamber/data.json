@@ -21,7 +21,7 @@
       "address": "4690 south Holladay Blvd.",
       "phone": 3854250595,
       "website": "woodhousespas.com",
-      "logo": "images/woodhouseicon.webp",
+      "logo": "images/woodhouseicon2.webp",
       "membership": "bronze"
     },
     {
@@ -37,7 +37,7 @@
       "address": "4747 Holladay Blvd.",
       "phone": 8016167516,
       "website": "sonofoodpark.com",
-      "logo": "sohofoodparklogo.webp",
+      "logo": "images/sohofoodparklogo.webp",
       "membership": "bronze"
     },
     {
@@ -62,13 +62,14 @@
       "phone": 8012789767,
       "website": "walgreens.com",
       "logo": "images/walgreenslogo.webp",
-      "membership": "walgreens.com"
+      "membership": "gold"
     },
     {
       "name": "All the Raige Dog Salon",
       "address": "4034 south 2700 east",
       "phone": 8019716959,
       "website": "alltheraigedogsalon.com",
+      "logo": "null",
       "membership": "bronze"
     }
   ]

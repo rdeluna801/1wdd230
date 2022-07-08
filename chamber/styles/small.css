@@ -562,18 +562,22 @@ article.history {
 article,
 .directSection {
   margin: 0.75rem;
-}
-.directSection {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   background-color: #034748;
 }
-.grid {
-  display: grid;
-  grid-template-columns: autofit, minmax(200px, 1fr);
-  align-items: center;
-}
+article.grid {
+  display: flex;
+  flex-direction: column;
 
+  /* display: grid;
+  grid-template-columns: autofit, minmax(200px, 1fr);
+  align-items: center;*/
+}
+.grid img.gridImg {
+  max-width: 150px;
+  display: block;
+}
 .list {
   display: flex;
   flex-direction: column;
@@ -584,7 +588,6 @@ article,
   align-items: center;
 }
 .grid section {
-  flex-direction: column;
   text-align: center;
 }
 .grid section > * {
@@ -604,16 +607,15 @@ article,
   display: none;
 }
 
-section h3 {
+.directnames {
   font-size: 1.5rem;
 }
 
-section a {
+.directSection a {
   font-family: var(--regletters);
   font-size: 0.9rem;
 }
 
-div.logo {
-  height: 75px;
-  width: 50%;
+.directSection div.logo {
+  height: 50%;
 }

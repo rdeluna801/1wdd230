@@ -40,6 +40,8 @@ fetch(requestURL)
       img.src = members[dog].logo;
       img.alt = members[dog].name;
       div.className = "logo";
+      img.className = "gridImg";
+      h3.className = "directnames";
       directSection.appendChild(h3);
       directSection.appendChild(p);
       div.appendChild(img);
