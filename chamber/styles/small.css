@@ -480,15 +480,19 @@ footer div,
 /*footer*/
 /*discover page*/
 main.discoverGrid {
-  display: grid;
-  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
-
 .church img {
   display: block;
   max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
+}
+#church {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .snowday img {
@@ -496,6 +500,11 @@ main.discoverGrid {
   max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
+}
+#snowday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .message {
@@ -514,6 +523,11 @@ main.discoverGrid {
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
+#stores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .clocktower img {
   display: block;
@@ -521,7 +535,11 @@ main.discoverGrid {
   border: 2px solid black;
   box-shadow: 0 0 15px black;
 }
-
+#clocktower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .historytitle {
   margin-left: 1em;
 }
@@ -548,6 +566,11 @@ figcaption.history {
   max-width: 100%;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
+}
+#park {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*discover page*/

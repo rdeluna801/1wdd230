@@ -1,5 +1,4 @@
 @media only screen and (min-width: 35rem) {
-
   /*:root {
     --cinereous: #93827f;
     --warmBlack: #034748;
@@ -20,12 +19,8 @@
       serif;
   }*/
   header {
-
     max-width: 100%;
   }
-
-
-
 
   h4 {
     font-family: var(--regletters);
@@ -84,10 +79,5 @@
 
   .norm:hover {
     box-shadow: 0 0 50px #333;
-  }
-
-  main .discoverGrid {
-    grid-auto-flow: inherit;
-
   }
 }
