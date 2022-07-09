@@ -526,11 +526,21 @@ main.discoverGrid {
   margin-left: 1em;
 }
 
+figcaption.history,
 article.history {
   border-width: 3px;
   background-color: white;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
+  font-size: medium;
+}
+figcaption.history {
+  display: block;
+  width: 75%;
+  padding: 2rem;
+  font-family: var(--regletters);
+  font-size: large;
+  margin-bottom: 2rem;
 }
 
 .park img {
