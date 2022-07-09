@@ -1,5 +1,4 @@
 (function ($) {
-  // Begin jQuery
   $(function () {
     // DOM ready
     // If a link has a dropdown, add sub menu toggle.
@@ -13,8 +12,9 @@
     $("html").click(function () {
       $(".nav-dropdown").hide();
     });
+
     // Toggle open and close nav styles on click
-    $("#nav-toggle").click(function () {
+    $("#nav-toggle").click(() => {
       $("nav ul").slideToggle();
     });
     // Hamburger to X toggle
