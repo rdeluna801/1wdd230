@@ -564,7 +564,7 @@ article,
   margin: 0.75rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
-  background-color: #034748;
+  background-color: white;
 }
 article.grid {
   display: flex;
