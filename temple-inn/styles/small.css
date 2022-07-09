@@ -1,0 +1,27 @@
+@import "style";
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading2a: "Euphoria Script", cursive;
+  --kids: "Henny Penny", cursive;
+  --heading2b: "Julius Sans One", sans-serif;
+  --para: "Montserrat", sans-serif;
+  --title_b: "The Nautigal", cursive;
+  --title_a: "Tangerine", cursive;
+  --warmBLK: #2d3c3f;
+  --pinkGRY: #d8d2cd;
+  --greenGRY: #79858b;
+  --lightGRY: #99a5a8;
+  --blueGRY: #919cac;
+  --oldGold: #bfab25;
+  --cinereous: #93827f;
+}
+body {
+  max-width: 100%;
+}
