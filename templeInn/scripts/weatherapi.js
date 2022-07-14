@@ -1,7 +1,8 @@
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
-const url = `http://api.openweathermap.org/data/2.5/weather?q=Holladay,UT,USA&units=Imperial&appid=dc698f3d077ae686717ebdc728067205`;
+const url = `http://api.openweathermap.org/data/2.5/forecast?lat=38.9848265&lon=-77.0946459&units=imperial&appid=dc698f3d077ae686717ebdc728067205`;
+const description = document.querySelector("#description");
 
 async function apiFetch(apiURL) {
   try {
@@ -19,11 +20,12 @@ async function apiFetch(apiURL) {
 apiFetch(url);
 
 function displayResults(weatherData) {
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
+  currentTemp.innerHTML = `The Current Temperature is: <strong>${weatherData.list[0].main.temp.toFixed(
     0
-  )}</strong>`;
-  const iconsrc = `http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  const desc = weatherData.weather[0].description;
+  )}  °F</strong>`;
+  description.innerHTML = `Today has ${weatherData.list[0].weather[0].description} `;
+  const iconsrc = `http://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
+  //const desc = weatherData.list.main[0].temp;
 
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);

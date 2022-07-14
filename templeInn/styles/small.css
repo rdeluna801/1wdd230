@@ -85,10 +85,13 @@ nav ul li.dropdown {
   font-family: var(--para);
   font-size: 2rem;
 }
+
 /*footer*/
-#footer {
-  height: 70px;
-  width: 70px;
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #262626;
+  color: white;
 }
 footer h3 {
   font-size: 3rem;
@@ -99,14 +102,38 @@ footer p {
   color: white;
   font-family: var(--para);
 }
-footer {
-  text-align: center;
-  width: 100%;
-  background-color: #262626;
-  color: white;
-}
+
 /*end footer*/
 
-main {
-  width: 95%;
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-left: 10px;
+  justify-items: center;
+}
+.currentdate {
+  padding: 10px;
+}
+.weather {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--greenGRY);
+  box-shadow: 13px 13px 30px black;
+  max-width: 75%;
+}
+.weather img {
+  display: block;
+  grid-row: 3;
+  max-width: 100%;
+  border: inset 5px var(--lightGRY);
+  padding: 5px;
+  background-color: #99a5a8;
+}
+.weather p {
+  font-family: var(--para);
+  font-size: 17px;
+  padding: 5px;
 }
