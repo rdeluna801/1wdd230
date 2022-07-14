@@ -34,6 +34,7 @@ h1 {
   font-size: 3rem;
 }
 nav ul {
+  font-family: var(--para);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -80,7 +81,10 @@ nav ul li.dropdown {
   content: &#x2612;
 }*/
 /*end nav*/
-
+.currentdate {
+  font-family: var(--para);
+  font-size: 2rem;
+}
 /*footer*/
 #footer {
   height: 70px;
