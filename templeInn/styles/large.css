@@ -1,9 +1,9 @@
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 700px) {
   .nav-list {
     display: block !important;
   }
 }
-#nav-toggle {
+/*#nav-toggle {
   position: absolute;
   left: 18px;
   top: 22px;
@@ -41,7 +41,7 @@
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
-}
+}*/
 article {
   max-width: 1000px;
   margin: 0 auto;
