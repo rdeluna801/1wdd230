@@ -1,0 +1,112 @@
+{
+  "Temples": [
+    {
+      "name": "Anchorage Alaska Temple",
+      "location": {
+        "address": "13161 Brayton Dr",
+        "city": "Anchorage",
+        "state": "Alaska",
+        "zip": 99516
+      },
+      "phone": "907-348-7890",
+      "milestone": {
+        "announced": "4 October 1997",
+        "goundbreaking": "17 April 1998",
+        "dedicated": "9 January 1999",
+        "rededicated": "8 February 2004"
+      },
+      "services": null,
+      "image": "images/anchorage_alaska_temple_lds.webp"
+    },
+    {
+      "name": "Jordan River Utah Temple",
+      "location": {
+        "address": "10200 south Temple Drive",
+        "city": "South Jordan",
+        "state": "Utah",
+        "zip": 84095
+      },
+      "phone": "801-254-3003",
+      "milestone": {
+        "announced": "3 February 1978",
+        "groundbreaking": "9 June 1979",
+        "dedicated": "16 November 1981",
+        "rededicated": "20 May 2018"
+      },
+      "services": ["clothing rental", "distribution center nearby"],
+      "image": "images/jordan_river_temple_exterior_images.webp"
+    },
+    {
+      "name": "Nauvoo Illinois Temple",
+      "location": {
+        "address": "50 N Wells St",
+        "city": "Nauvoo",
+        "state": "Illinois",
+        "zip": 62354
+      },
+      "phone": "217-453-6252",
+      "milestone": {
+        "announced": "4 April 1999",
+        "groundbreaking": "24 October 1999",
+        "dedicated": "27 June 2002",
+        "rededicated": null
+      },
+      "services": ["clothing rental", "patron housing available"],
+      "image": "images/nauvoo_temple_lds.webp"
+    },
+    {
+      "name": "Winter Quarters Nebraska Temple",
+      "location": {
+        "address": "8283 N 34th St",
+        "city": "Omaha",
+        "state": "Nebraska",
+        "zip": 68112
+      },
+      "phone": "402-453-3406",
+      "milestone": {
+        "announced": "14 June 1999",
+        "groundbreaking": "28 November 1999",
+        "dedicated": "22 April 2001",
+        "rededicated": null
+      },
+      "services": null,
+      "image": "images/winter_quarters_temple_lds.webp"
+    },
+    {
+      "name": "Denver Colorado Temple",
+      "location": {
+        "address": "2001 E Phillips Cir",
+        "city": "Centennial",
+        "state": "Colorado",
+        "zip": 80122
+      },
+      "phone": "303-730-0220",
+      "milestone": {
+        "announced": "31 March 1982",
+        "groundbreaking": "19 May 1984",
+        "dedicated": "24 October 1986",
+        "rededicated": null
+      },
+      "services": ["clothing rental", "distribution center nearby"],
+      "image": "images/denver_colorado_temple_grounds.webp"
+    },
+    {
+      "name": "Salt Lake Temple",
+      "location": {
+        "address": "50 W Temple St",
+        "city": "Salt Lake City",
+        "state": "Utah",
+        "zip": 84150
+      },
+      "phone": null,
+      "milestone": {
+        "announced": "28 July 1847",
+        "groundbreaking": "14 February 1853",
+        "dedicated": "6 April 1893",
+        "rededicated": null
+      },
+      "services": null,
+      "image": "images/slctemple5.webp"
+    }
+  ]
+}
