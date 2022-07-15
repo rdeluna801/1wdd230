@@ -49,5 +49,4 @@ fetch(requestURL)
 
       document.querySelector("article.grid").appendChild(directSection);
     }
-    function displayMembers(members) {}
   });

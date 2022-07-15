@@ -137,3 +137,33 @@ footer p {
   font-size: 17px;
   padding: 5px;
 }
+.temple_main-container {
+  display: flex;
+}
+.templeName {
+  font-family: var(--title_a);
+  font-size: 3rem;
+}
+.tempPic {
+  display: block;
+  width: 100%;
+  margin: 5px;
+}
+.temples_section {
+  display: block;
+  max-width: 100%;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 13px 13px 30px black;
+}
+.addy,
+.city,
+.phone,
+.date {
+  margin: 0;
+  padding: 0;
+}
+div #message {
+  font-family: var(--para);
+  color: white;
+}
