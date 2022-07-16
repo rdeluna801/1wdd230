@@ -42,18 +42,58 @@
     <main>
       <section class="main-container">
         <div class="currentdate"></div>
-        <h2></h2>
-        <section class="weather">
-          <h3>Bethesda, MD</h3>
-          <p id="current-temp"></p>
-          <p id="description"></p>
-          <p id="humidity"></p>
-          <img id="weather-icon" src="" alt="" />
-          <figcaption></figcaption>
-        </section>
         <section class="favTemple_container"></section>
       </section>
-      <section class="weather_container"></section>
+      <section class="weather_container">
+        <div id="openweathermap-widget-21"></div>
+        <script src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js"></script>
+        <script>
+          window.myWidgetParam
+            ? window.myWidgetParam
+            : (window.myWidgetParam = []);
+          window.myWidgetParam.push({
+            id: 21,
+            cityid: "4348599",
+            appid: "dc698f3d077ae686717ebdc728067205",
+            units: "imperial",
+            containerid: "openweathermap-widget-21",
+          });
+          (function () {
+            var script = document.createElement("script");
+            script.async = true;
+            script.charset = "utf-8";
+            script.src =
+              "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(script, s);
+          })();
+        </script>
+      </section>
+      <section class="widget">
+        <div id="openweathermap-widget-22"></div>
+        <script>
+          window.myWidgetParam
+            ? window.myWidgetParam
+            : (window.myWidgetParam = []);
+          window.myWidgetParam.push({
+            id: 22,
+            cityid: "4348599",
+            appid: "dc698f3d077ae686717ebdc728067205",
+            units: "imperial",
+            containerid: "openweathermap-widget-22",
+          });
+          (function () {
+            var script = document.createElement("script");
+            script.async = true;
+            script.charset = "utf-8";
+            script.src =
+              "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(script, s);
+          })();
+        </script>
+      </section>
+
       <div class="callout" class="alert">
         <div class="callout-header">Reserve your Room Today!</div>
         <span
