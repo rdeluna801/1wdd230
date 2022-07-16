@@ -120,7 +120,7 @@ footer p {
   justify-items: center;
   background-color: var(--greenGRY);
   box-shadow: 13px 13px 30px black;
-  max-width: 50%;
+  max-width: 100%;
 }
 .weather img {
   display: block;
@@ -170,6 +170,37 @@ footer p {
 }
 .favSpotlight {
   font-family: var(--heading2b);
+}
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+.callout-header {
+  padding: 25px 15px;
+  background: var(--greenGRY);
+  font-size: 30px;
+  font-family: var(--heading2b);
+  color: white;
+}
+.callout-container {
+  padding: 15px;
+  background-color: var(--pinkGRY);
+  color: black;
+  font-family: var(--para);
+}
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: var(--greenGRY);
 }
 /*end index page*/
 /*temple page*/
