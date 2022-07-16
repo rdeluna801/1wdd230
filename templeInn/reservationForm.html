@@ -26,7 +26,7 @@
 
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
-          <li><a href="reservations.html">Reservation</a></li>
+          <li><a href="reservationForm.html">Reservation</a></li>
           <li><a href="temples.html">Temples</a></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Services</a>
@@ -39,13 +39,15 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="res_main">
       <div class="currentdate"></div>
       <h2 class="resHeading">Reservation Application</h2>
       <span id="resmessage"></span>
       <section class="form">
         <div class="formid">
-          <h3>Please enter required fields to reserve accomodations</h3>
+          <h3 class="resH3">
+            Please enter required fields to reserve accomodations
+          </h3>
 
           <form method="get" action="resmessage">
             <fieldset class="yourInfo">
@@ -89,7 +91,7 @@
                 <input class="req" type="text" id="state" name="state" required
               /></label>
             </fieldset>
-            <fieldset>
+            <fieldset class="instructions">
               <legend>Special Directions or Additional Needs?</legend>
               <textarea
                 class="special"
@@ -98,7 +100,7 @@
                 cols="50"
               ></textarea>
             </fieldset>
-            <fieldset>
+            <fieldset class="dates">
               <legend>Date of Reservation:</legend>
               <label
                 >Date of Arrival:<input
@@ -117,7 +119,7 @@
                   required
               /></label>
             </fieldset>
-            <fieldset>
+            <fieldset class="additionalRes">
               <legend>Additional Reservations:</legend>
               <textarea
                 class="additional"
@@ -125,7 +127,7 @@
                 rows="10"
                 cols="50"
               >
-placeholder="Do you need additional reservations? Child Care, Reservation Hall, Family Search Library, etc."</textarea
+"Do you need additional reservations? Child Care, Reservation Hall, Family Search Library, etc."</textarea
               >
             </fieldset>
             <button id="btnSubmit" type="submit">
