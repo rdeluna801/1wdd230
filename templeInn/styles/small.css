@@ -84,6 +84,7 @@ nav ul li.dropdown {
 .currentdate {
   font-family: var(--para);
   font-size: 2rem;
+  padding: 10px;
 }
 
 /*footer*/
@@ -104,25 +105,22 @@ footer p {
 }
 
 /*end footer*/
-
+/*index page*/
 .main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  margin-left: 10px;
-  justify-items: center;
-}
-.currentdate {
-  padding: 10px;
+  row-gap: 10px;
 }
 .weather {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   background-color: var(--greenGRY);
   box-shadow: 13px 13px 30px black;
-  max-width: 75%;
+  max-width: 50%;
 }
 .weather img {
   display: block;
@@ -131,12 +129,50 @@ footer p {
   border: inset 5px var(--lightGRY);
   padding: 5px;
   background-color: #99a5a8;
+  margin-bottom: 15px;
 }
 .weather p {
   font-family: var(--para);
   font-size: 17px;
   padding: 5px;
+  margin-bottom: 0;
 }
+.favTempleName {
+  font-family: var(--title_a);
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.favTemplePic {
+  box-shadow: 13px 13px 30px black;
+  float: right;
+  margin: 2rem;
+  width: 50%;
+}
+.favTemple_container {
+  background-color: var(--pinkGRY);
+  padding: 10px;
+  box-shadow: 13px 13px 30px black;
+  grid-row: 2;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.favInfo,
+.favInfo3 {
+  font-family: var(--para);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+.favInfo2 {
+  font-family: var(--heading2b);
+  margin-left: 20px;
+}
+.favSpotlight {
+  font-family: var(--heading2b);
+}
+/*end index page*/
+/*temple page*/
 .temple_main-container {
   display: flex;
 }
@@ -167,3 +203,4 @@ div #message {
   font-family: var(--para);
   color: white;
 }
+/*end temple page*/
