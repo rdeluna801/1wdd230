@@ -261,3 +261,59 @@ textarea {
   background-color: var(--pinkGRY);
   font-weight: bold;
 }
+/*end reservation page*/
+/*services page*/
+.Inn,
+.Hall,
+.Center,
+.Play {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blueGRY);
+  margin: 10px;
+  box-shadow: 3px 5px 8px 0px black;
+  padding: 5px;
+}
+.Inn h2,
+.Hall h2,
+.Center h2,
+.Play h2 {
+  font-family: var(--heading2b);
+  margin-left: 20px;
+}
+.Inn h4 {
+  font-family: var(--heading2b);
+  margin-left: 20px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.Inn h2,
+.Hall h2,
+.Center h2,
+.Play h2 {
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: var(--pinkGRY);
+  box-shadow: inset 0px 0px 9px 0px #262626;
+}
+.Inn h3,
+ul.free,
+ul.specialty {
+  margin-left: 20px;
+}
+.Inn h3 {
+  font-family: var(--para);
+  font-weight: bold;
+}
+ul.free,
+ul.specialty {
+  font-family: var(--para);
+}
+.theHall,
+.theCenter,
+.thePlay {
+  margin: 20px;
+  font-family: var(--para);
+}
