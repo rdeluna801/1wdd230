@@ -42,6 +42,99 @@
     <main>
       <div class="currentdate"></div>
       <h2 class="resHeading">Reservation Application</h2>
+      <span id="resmessage"></span>
+      <section class="form">
+        <div class="formid">
+          <h3>Please enter required fields to reserve accomodations</h3>
+
+          <form method="get" action="resmessage">
+            <fieldset class="yourInfo">
+              <legend>Applicant's Information</legend>
+              <label
+                >First Name:<input
+                  class="req"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  required
+              /></label>
+              <label
+                >Last name:
+                <input class="req" type="text" id="lname" name="lname" required
+              /></label>
+              <label
+                >Email address:
+                <input
+                  class="req"
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="example@address.com"
+              /></label>
+              <label
+                >Phone number:
+                <input class="req" type="tel" id="phone" name="phone" required
+              /></label>
+              <label
+                >Street Address:
+                <input class="req" type="text" id="addy" name="addy" required
+              /></label>
+              <label
+                >City:
+                <input class="req" type="text" id="city" name="city" required
+              /></label>
+              <label
+                >State:
+                <input class="req" type="text" id="state" name="state" required
+              /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Special Directions or Additional Needs?</legend>
+              <textarea
+                class="special"
+                name="profile"
+                rows="10"
+                cols="50"
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <legend>Date of Reservation:</legend>
+              <label
+                >Date of Arrival:<input
+                  class="req"
+                  type="text"
+                  id="arrive"
+                  name="arrive"
+                  required
+              /></label>
+              <label
+                >Date of Departure:<input
+                  class="req"
+                  type="text"
+                  id="leave"
+                  name="leave"
+                  required
+              /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Additional Reservations:</legend>
+              <textarea
+                class="additional"
+                name="additional"
+                rows="10"
+                cols="50"
+              >
+placeholder="Do you need additional reservations? Child Care, Reservation Hall, Family Search Library, etc."</textarea
+              >
+            </fieldset>
+            <button id="btnSubmit" type="submit">
+              Complete My Registration
+            </button>
+            <input type="hidden" value="4" class="resmessage" />
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -57,5 +150,6 @@
 
     <script src="scripts/modifiedTime.js"></script>
     <script src="scripts/currentTime.js"></script>
+    <script src="scripts/submit.js"></script>
   </body>
 </html>

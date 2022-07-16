@@ -204,3 +204,7 @@ div #message {
   color: white;
 }
 /*end temple page*/
+/*reservation form*/
+.resHeading {
+  font-family: var(--heading2b);
+}
