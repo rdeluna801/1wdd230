@@ -1,5 +1,5 @@
 y.addEventListener("click", validateForm);
-const message = document.querySelector(".resmessage");
+const message = document.querySelector("#btnSubmit");
 
 function validateForm() {
   var y,
