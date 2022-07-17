@@ -1,5 +1,5 @@
 const requestURL =
-  "http://rdeluna801.github.io/wdd230/templeInn/templelist.json";
+  "https://rdeluna801.github.io/wdd230/templeInn/templelist.json";
 const templeSection = document.querySelector("temples_container");
 
 fetch(requestURL)
