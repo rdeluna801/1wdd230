@@ -7,9 +7,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.log(jsonObject);
     let temples = jsonObject["Temples"];
-    console.log(temples);
 
     for (let i = 0; i < 5; i++) {
       let templeSection = document.createElement("section");

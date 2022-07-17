@@ -1,4 +1,4 @@
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
   nav {
     width: 100%;
   }
@@ -32,31 +32,20 @@
     display: inline-block;
   }
 
-  /*nav ul li a,
-  nav ul li a:visited {
+  .weather_container {
     display: block;
-    padding: 0 20px;
-    line-height: 70px;
-    background: #262626;
-    color: #ffffff;
-    text-decoration: none;
   }
-
-  nav ul li a:hover,
-  nav ul li a:visited:hover {
-    background: #2581dc;
-    color: #ffffff;
+  .favSpotlight {
+    font-size: 3em;
   }
-  nav ul li a:not(:only-child):after,
-  nav ul li a:visited:not(:only-child):after {
-    padding-left: 4px;
-    content: " ▾";
+  .favTempleName {
+    font-size: 3em;
   }
-  nav ul li ul li {
-    min-width: 190px;
+  .favInfo,
+  .favInfo3 {
+    font-size: 1em;
   }
-  nav ul li ul li a {
-    padding: 15px;
-    line-height: 20px;
-  }*/
+  .favInfo2 {
+    font-size: 1em;
+  }
 }

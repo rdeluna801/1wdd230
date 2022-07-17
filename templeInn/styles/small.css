@@ -112,7 +112,7 @@ footer p {
   grid-template-rows: auto;
   row-gap: 10px;
 }
-.weather {
+/*.weather {
   grid-row: 3;
   display: flex;
   flex-direction: column;
@@ -131,15 +131,20 @@ footer p {
   background-color: #99a5a8;
   margin-bottom: 15px;
 }
+
 .weather p {
   font-family: var(--para);
   font-size: 17px;
   padding: 5px;
   margin-bottom: 0;
+}*/
+.weather_container {
+  display: none;
 }
+
 .favTempleName {
   font-family: var(--title_a);
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0;
 }
 
@@ -150,6 +155,7 @@ footer p {
   width: 50%;
 }
 .favTemple_container {
+  z-index: 1;
   background-color: var(--pinkGRY);
   padding: 10px;
   box-shadow: 13px 13px 30px black;
