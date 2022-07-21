@@ -6,7 +6,6 @@ function validateForm() {
     i,
     valid = true;
   y = document.getElementsByClassName("req");
-
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
     if (y[i].value == "") {

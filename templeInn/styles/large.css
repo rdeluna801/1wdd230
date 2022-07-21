@@ -24,3 +24,12 @@ article {
   margin: 0 auto;
   padding: 10px;
 }
+.servicesSection {
+  margin: 25px;
+}
+.Inn,
+.Hall,
+.Center,
+.Play {
+  margin: 25px;
+}

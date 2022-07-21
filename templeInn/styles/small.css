@@ -141,7 +141,24 @@ footer p {
 .weather_container {
   display: none;
 }
-
+div.indexImg {
+  width: 50%;
+  margin-left: 20px;
+}
+div.indexImg figcaption {
+  margin-top: 5px;
+  box-shadow: inset 0px 0px 9px 0px #262626;
+  box-shadow: 13px 13px 30px black;
+}
+.familyP {
+  font-family: var(--para);
+  font-size: 1rem;
+  border: solid 1px black;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: inset 0px 0px 9px 0px #262626;
+  background-color: var(--pinkGRY);
+}
 .favTempleName {
   font-family: var(--title_a);
   font-size: 3rem;
@@ -169,10 +186,12 @@ footer p {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 20px;
+  font-size: 0.5rem;
 }
 .favInfo2 {
   font-family: var(--heading2b);
   margin-left: 20px;
+  font-size: 0.5rem;
 }
 .favSpotlight {
   font-family: var(--heading2b);
@@ -212,6 +231,7 @@ footer p {
 /*temple page*/
 .temple_main-container {
   display: flex;
+  background-color: var(--blueGRY);
 }
 .templeName {
   font-family: var(--title_a);
@@ -222,12 +242,16 @@ footer p {
   width: 100%;
   margin: 5px;
 }
+.section.temples_section {
+  background-color: var(--blueGRY);
+}
 .temples_section {
   display: block;
   max-width: 100%;
   margin: 20px;
   padding: 10px;
   box-shadow: 13px 13px 30px black;
+  background-color: aliceblue;
 }
 .addy,
 .city,
@@ -373,6 +397,79 @@ ul.specialty {
   font-family: var(--heading2a);
   font-size: 1.5rem;
 }
-.receptP {
+p.theHall {
   font-family: var(--para);
+}
+figure.receptionImg {
+  display: block;
+  align-items: center;
+  box-shadow: 3px 5px 8px 0px black;
+  width: 20%;
+}
+figure.receptionImg img {
+  display: 100%;
+  box-shadow: 3px 5px 8px 0px black;
+}
+figure.receptionImg2 img {
+  display: 100%;
+  box-shadow: 3px 5px 8px 0px black;
+}
+.centerImg {
+  display: block;
+  align-items: center;
+  box-shadow: 3px 5px 8px 0px black;
+  width: 45%;
+  background-color: black;
+}
+.playImg {
+  display: block;
+  align-items: center;
+  box-shadow: 3px 5px 8px 0px black;
+  width: 45%;
+  background-color: black;
+}
+.receptionImg {
+  display: block;
+  align-items: center;
+  box-shadow: 3px 5px 8px 0px black;
+  width: 45%;
+  background-color: black;
+}
+
+/*reception page*/
+/* missionary page*/
+.missionarySection {
+  font-family: var(--heading2b);
+  margin: 20px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid black;
+  box-shadow: 3px 5px 8px 0px black;
+  background-color: var(--blueGRY);
+}
+.missionaryImg {
+  display: block;
+  align-items: center;
+  box-shadow: 3px 5px 8px 0px black;
+  width: 45%;
+  background-color: black;
+}
+
+.missionarySection p {
+  font-family: var(--para);
+  font-size: 1em;
+}
+.missionarySection h2 {
+  font-family: var(--heading2b);
+  font-size: 1rem;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: var(--pinkGRY);
+  box-shadow: inset 0px 0px 9px 0px #262626;
+}
+.missionarySection h3 {
+  font-family: var(--heading2b);
+  font-size: 1rem;
 }
